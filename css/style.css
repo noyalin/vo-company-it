@@ -13,9 +13,12 @@ body {
 }
 
 #header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
     background: rgba(255,255,255,0.90);
     box-shadow: 0 1px 0 0 rgba(0,0,0,0.05);
-    position: relative;
     color: #777373;
 }
 
@@ -47,7 +50,38 @@ body {
     background: transparent;
     color: #f85e63;
 }
+/*轮播*/
+.main .hesperiden.tparrows{
+    width: 30px;
+    height: 60px;
+    border-radius: 0;
+    background:none;
+}
+.main .hesperiden.tparrows.tp-leftarrow:before{
+    content: "";
+    display: none;
 
+}
+.main .hesperiden.tparrows.tp-rightarrow:before{
+    content: "";
+    display: none;
+}
+.main .hesperiden.tparrows.tp-leftarrow {
+    background: url(../images/prev_copy.png) no-repeat;
+    height: 60px;
+    width: 30px;
+}
+.main .hesperiden.tparrows.tp-leftarrow:hover{
+    background: url(../images/prev.png) no-repeat;
+}
+.main .hesperiden.tparrows.tp-rightarrow {
+    background: url(../images/next_copy.png) no-repeat;
+    height: 60px;
+    width: 30px;
+}
+.main .hesperiden.tparrows.tp-rightarrow:hover{
+    background: url(../images/next.png) no-repeat;
+}
 .main .section {
     margin: 120px auto;
     position: relative;
@@ -86,7 +120,7 @@ body {
 
 .main .section.sec1 .section-left:before {
     content: '';
-    background: url(../img/sale_icon.png) no-repeat;
+    background: url(../images/sale_icon.png) no-repeat;
     width: 28px;
     height: 40px;
     display: block;
@@ -95,13 +129,20 @@ body {
 
 .main .section.sec2 .section-left:before {
     content: '';
-    background: url(../img/APPicon.png) no-repeat;
+    background: url(../images/APPicon.png) no-repeat;
     width: 32px;
     height: 32px;
     display: block;
     margin-left: 32px;
 }
-
+.main .section.sec3 .section-left:before {
+    content: '';
+    background: url(../images/system_icon.png) no-repeat;
+    width: 36px;
+    height: 32px;
+    display: block;
+    margin-left: 32px;
+}
 .main .section .detail {
     margin-left: 32px;
     margin-top: -27px;
@@ -264,6 +305,10 @@ body {
 .foot .email .detail{
     padding: 8px 0 8px 10px;
 }
+.foot .copy-right{
+    text-align: center;
+    margin-top: 40px;
+}
 @media (max-width: 1200px) {
     .content {
         width: 80%;
@@ -397,10 +442,13 @@ body {
     }
     .main .sec6 .nav-tabs li a {
         margin-right: 5px;
-        width: 120px;
+        width: 115px;
     }
     .foot{
         padding: 50px 50px;
+    }
+    .foot .copy-right{
+        text-align: left;
     }
 
 }
