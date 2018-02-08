@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <link rel="short cut icon" href="images/favicon_0.ico" type="image/vnd.microsoft.icon">
+    <title>VoyageOne</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+
+    <script src="js/angular.min.js"></script>
+</head>
+<body>
+<div id="wrapper" ng-app="">
+    <header id="header" role="header" ng-include="'common/head.html'">
+    </header>
+    <div class="about-main">
+        <div class="container-fluid">
+            <div class="container">
+                <div>首页>关于我们>公司介绍</div>
+            </div>
+            <div class="container">
+                <div class="wrapper">
+                    <div class="section" style="height: 500px;" id="section1">
+
+                    </div>
+                    <div class="section" style="height: 500px;" id="section2">
+
+                    </div>
+                    <div class="section" style="height: 500px;" id="section3">section3</div>
+                    <div class="section" style="height: 500px;" id="section4">section4</div>
+                    <div class="section" style="height: 500px;" id="section5">section5</div>
+                </div>
+                <nav style="top: 100px;position: fixed">
+                    <a href="#section1" rel="external nofollow" class="current">section1</a>
+                    <a href="#section2" rel="external nofollow" >section2</a>
+                    <a href="#section3" rel="external nofollow" >section3</a>
+                    <a href="#section4" rel="external nofollow" >section4</a>
+                    <a href="#section5" rel="external nofollow" >section5</a>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+    <!--尾部-->
+    <footer >
+        <div ng-include="'common/foot.html'"></div>
+    </footer>
+</div>
+
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+<!--<script src="js/swiper-4.1.0.min.js"></script>-->
+<script type="text/javascript">
+
+    var $navs = $('nav a'),          // 导航
+        $sections = $('.section'),       // 模块
+        $window = $(window),
+        navLength = $navs.length - 1;
+
+    $window.on('scroll', function() {
+        var scrollTop = $window.scrollTop(),
+            len = navLength;
+
+        for (; len > -1; len--) {
+            var that = $sections.eq(len);
+            if (scrollTop >= that.offset().top) {
+                console.log(scrollTop+"--"+that.offset().top);
+                $navs.removeClass('current').eq(len).addClass('current');
+                break;
+            }
+        }
+    });
+
+</script>
+</body>
+</html>
