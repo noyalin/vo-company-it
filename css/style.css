@@ -1,3 +1,51 @@
+@font-face {
+    font-family: 'HelveticaNeue_Bold';
+    src: url('../fonts/HelveticaNeue_Bold.ttf');
+    /*src:*/
+    /*url('../font/pinghei.eot?#iefix') format('embedded-opentype'),*/
+    /*url('../font/pinghei.woff') format('woff'),*/
+    /*url('../font/pinghei.ttf') format('truetype'),*/
+    /*url('../font/pinghei.svg') format('svg');*/
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue_Condensed';
+    src: url('../fonts/HelveticaNeue_Condensed.ttf');
+    /*src:*/
+    /*url('../font/pinghei.eot?#iefix') format('embedded-opentype'),*/
+    /*url('../font/pinghei.woff') format('woff'),*/
+    /*url('../font/pinghei.ttf') format('truetype'),*/
+    /*url('../font/pinghei.svg') format('svg');*/
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceHanSansCN-Bold';
+    src: url('../fonts/NotoSansHans-Bold.otf');
+    /*src:*/
+    /*url('../font/pinghei.eot?#iefix') format('embedded-opentype'),*/
+    /*url('../font/pinghei.woff') format('woff'),*/
+    /*url('../font/pinghei.ttf') format('truetype'),*/
+    /*url('../font/pinghei.svg') format('svg');*/
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceHanSansCN-Normal';
+    src: url('../fonts/SourceHanSansCN-Normal.otf');
+    /*src:*/
+    /*url('../font/pinghei.eot?#iefix') format('embedded-opentype'),*/
+    /*url('../font/pinghei.woff') format('woff'),*/
+    /*url('../font/pinghei.ttf') format('truetype'),*/
+    /*url('../font/pinghei.svg') format('svg');*/
+    font-weight: normal;
+    font-style: normal;
+}
+
 html, body {
     position: relative;
     height: 100%;
@@ -5,11 +53,15 @@ html, body {
 
 body {
     background: #FAFAFA;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: SourceHanSansCN-Normal, Arial, sans-serif;
     font-size: 14px;
     color: #000;
     margin: 0;
     padding: 0;
+}
+
+.font-sb {
+    font-family: SourceHanSansCN-Bold;
 }
 
 #wrapper {
@@ -39,7 +91,6 @@ body {
 
 #header a {
     color: #777373;
-    font-weight: bold;
     padding: 20px 0;
     cursor: pointer;
     font-size: 15px;
@@ -48,6 +99,12 @@ body {
 #header .nav li a {
     padding: 20px 10px;
     color: #777373;
+    text-align: center;
+    font-family: NotoSansHans-Bold;
+}
+
+#header .nav li.active a {
+    border-bottom: 3px solid #f85e63;
 }
 
 #header .nav li a:hover {
@@ -55,48 +112,9 @@ body {
     color: #f85e63;
 }
 
-/*首页*/
-
 /*轮播*/
-.main .rev_slider li{
+.main .rev_slider li {
     text-align: center;
-}
-.main .hesperiden.tparrows {
-    width: 30px;
-    height: 60px;
-    border-radius: 0;
-    background: none;
-}
-
-.main .hesperiden.tparrows.tp-leftarrow:before {
-    content: "";
-    display: none;
-
-}
-
-.main .hesperiden.tparrows.tp-rightarrow:before {
-    content: "";
-    display: none;
-}
-
-.main .hesperiden.tparrows.tp-leftarrow {
-    background: url(../images/prev_copy.png) no-repeat;
-    height: 60px;
-    width: 30px;
-}
-
-.main .hesperiden.tparrows.tp-leftarrow:hover {
-    background: url(../images/prev.png) no-repeat;
-}
-
-.main .hesperiden.tparrows.tp-rightarrow {
-    background: url(../images/next_copy.png) no-repeat;
-    height: 60px;
-    width: 30px;
-}
-
-.main .hesperiden.tparrows.tp-rightarrow:hover {
-    background: url(../images/next.png) no-repeat;
 }
 
 .main .section {
@@ -133,6 +151,7 @@ body {
     font-size: 48px;
     opacity: 0.1;
     margin-top: -23px;
+    font-family: HelveticaNeue_Condensed;
 }
 
 .main .section.sec1 .section-left:before {
@@ -195,6 +214,7 @@ body {
     width: 150px;
     text-align: center;
     margin-bottom: 30px;
+    font-family: SourceHanSansCN-Bold;
 }
 
 .main .part {
@@ -229,8 +249,8 @@ body {
     text-align: center;
     font-size: 18px;
     color: #4E4949;
-    font-weight: bold;
     margin-bottom: 18px;
+    font-family: SourceHanSansCN-Bold;
 }
 
 .main .sec4 .sec4-detail {
@@ -260,6 +280,7 @@ body {
     width: 200px;
     text-align: center;
     border: 0;
+    font-family: SourceHanSansCN-Bold;
 }
 
 .main .sec6 .nav-tabs li:last-child a {
@@ -277,6 +298,12 @@ body {
     height: 144px;
     position: relative;
     text-align: center;
+}
+
+.main .sec6 .brand img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
 }
 
 .main .sec6 .brand-wrap {
@@ -345,7 +372,7 @@ body {
 
 /*about us*/
 .about-main {
-
+    margin-top: 70px;
 }
 
 /*尾部*/
@@ -359,7 +386,7 @@ body {
 .foot .foot-title {
     font-size: 18px;
     margin-bottom: 25px;
-
+    font-family: SourceHanSansCN-Bold;
 }
 
 .foot .logo {
@@ -386,12 +413,18 @@ body {
     margin-bottom: 30px;
 }
 
+.foot .address .detail {
+    font-family: HelveticaNeue_Bold;
+}
+
 .foot .address .address-cn {
     font-size: 14px;
+    font-family: SourceHanSansCN-Bold;
 }
 
 .foot .email .detail {
     padding: 8px 0 8px 10px;
+    font-family: HelveticaNeue_Bold;
 }
 
 .foot .copy-right {
@@ -493,10 +526,6 @@ body {
 }
 
 @media (min-width: 768px) {
-    #header .nav li a.active {
-        border-bottom: 3px solid #f85e63;
-    }
-
     .main-nav li {
         margin: 0 0 0 30px;
         display: inline-block;
@@ -525,11 +554,16 @@ body {
     .main .content {
         width: 51%;
     }
+
 }
 
 @media (max-width: 768px) {
     #header .navbar-header {
         position: relative;
+    }
+
+    #header .nav li.active a {
+        border-bottom: 0;
     }
 
     .main .content {
@@ -542,7 +576,21 @@ body {
 
     .main .sec6 .nav-tabs li a {
         margin-right: 5px;
-        width: 115px;
+        width: 100px;
+        font-size: 14px;
+    }
+
+    .main .section .title {
+        font-size: 24px;
+    }
+
+    .main .part .title {
+        font-size: 24px;
+        margin: 20px 0 50px 0;
+    }
+
+    .main .part {
+        margin-bottom: 20px;
     }
 
     .foot {
