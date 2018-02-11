@@ -27,11 +27,12 @@
     <![endif]-->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/angular.min.js"></script>
     <script src="js/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
     <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
 
-    <script src="js/angular.min.js"></script>
+
 </head>
 <body>
 <div id="wrapper" ng-app="">
@@ -39,7 +40,8 @@
     </header>
     <div class="main">
         <!--轮播-->
-        <div id="rev_slider_1" class="rev_slider scroll-content" data-version="5.4.4" style="display:none">
+        <div id="rev_slider_1" class="rev_slider scroll-content fullwidthabanner" data-version="5.4.4"
+             style="display:none">
 
             <ul>
                 <!-- MINIMUM SLIDE STRUCTURE -->
@@ -49,14 +51,16 @@
                     <img src="images/banner.png" alt="Sky" class="rev-slidebg">
                     <!-- BEGIN BASIC TEXT LAYER -->
                     <!--开始、结束动画-->
-                    <div class="tp-caption tp-resizeme largewhitebg"
-                         style="font-size: 72px;color: #FFFFFF;background: transparent;font-weight: bold;"
+                    <div class="tp-caption tp-resizeme "
+                         style="font-family:HelveticaNeue_Bold;font-size: 72px;color: #FFFFFF;background: transparent;"
 
                          data-frames='[{"delay":1000,"speed":300,"frame":"0","from":"x:left;skX:45px;","to":"o:1;","ease":"Power3.easeInOut"},
                          {"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
                          data-type="text"
                          data-x="center"
                          data-y="center"
+                         data-fontsize="['72', '72', '24', '18']"
+                         data-lineheight="['72', '72', '24', '18']"
                          data-hoffset="0"
                          data-voffset="0"
                          data-width="['auto']"
@@ -67,55 +71,51 @@
                         <div>EASIEST WAY</div>
                         <div>TO SELL IN CHINA</div>
                     </div>
-                    <!-- END BASIC TEXT LAYER -->
 
-                    <!-- BEGIN BASIC TEXT LAYER -->
-                    <!--开始、结束动画-->
-                    <div class="tp-caption tp-resizeme largewhitebg"
-                         style="font-size: 12px;color: #FFFFFF;background: transparent;"
-
-                         data-frames='[{"delay":1500,"speed":300,"frame":"0","from":"y:top;","to":"o:1;","ease":"Power3.easeInOut"},
-                         {"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                    <div class="tp-caption tp-resizeme font-zdy12 color-white"
 
                          data-x="center"
                          data-y="center"
-                         data-hoffset="0"
-                         data-voffset="200"
-                         data-width="['auto']"
-                         data-height="['auto']"
+                         data-hoffset="['0', '0', '0', '0']"
+                         data-voffset="['150', '150', '100', '50']"
+                         data-width="['900','900','600','300']"
+                         data-fontsize="['12', '12', '12', '12']"
+                         data-lineheight="['12', '12', '12', '12']"
+                         data-height="none" data-whitespace="normal"
+                         data-type="text" data-responsive_offset="on"
 
-                    >
+                         data-frames='[{}]'
+                         data-textalign="['center','center','center','center']"
+                         data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+                         data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                         style="z-index: 12;color: #fff;
+                         white-space: normal;background: transparent;font-family:HelveticaNeue_Bold;
+                            ">
                         VoyageOne unlocks a new world of online shoppers to brands and retailers, and a market of
                         possibilites.
                     </div>
                     <!-- END BASIC TEXT LAYER -->
 
                     <!-- BEGIN BASIC TEXT LAYER -->
-                    <a href="#" target="_self" class="tp-caption tp-resizeme"
-                       style="font-size: 18px;color: #4E4949;background: #FFFFFF;border-radius: 20px;line-height: 40px;padding: 0 30px;"
+                    <a href="#" target="_self" class="tp-caption tp-resizeme font-zdy18"
+                       style="font-family:NotoSansHans-Bold;font-size: 18px;color: #4E4949;background: #FFFFFF;border-radius: 20px;line-height: 40px;padding: 0 30px;"
 
                        data-frames='[{"delay":1600,"speed":1500,"frame":"0","from":"y:bottom;rZ:90deg;sX:2;sY:2;","to":"o:1;","ease":"Power3.easeInOut"},
                          {"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
                        data-type="button"
-                       data-x="center"
-                       data-y="bottom"
-                       data-hoffset="0"
-                       data-voffset="120"
+                       data-textalign="['center','center','center','center']"
+
+                       data-x="['center','center','center','center']"
+                       data-y="['bottom','bottom','bottom','bottom']"
+                       data-hoffset="['0', '0', '0', '0']"
+                       data-voffset="['200', '40', '40', '10']"
                        data-width="['auto']"
-                       data-height="['40']"
+                       data-height="['auto']"
 
                     >
                         了解更多
                     </a>
                     <!-- END BASIC TEXT LAYER -->
-                </li>
-
-                <!-- MINIMUM SLIDE STRUCTURE -->
-                <li data-transition="fade">
-
-                    <!-- SLIDE'S MAIN BACKGROUND IMAGE -->
-                    <img src="images/banner.png" alt="Ocean" class="rev-slidebg">
-
                 </li>
 
             </ul>
@@ -133,7 +133,13 @@
                             <div class="title">新零售解决方案</div>
                             <div class="line"></div>
                             <p class="content">
-                                反垄断累死了客服警务我配偶王培荣我反垄断累死了客服警务我配偶王培荣我反垄断累死了客服警务我配偶王培荣我反垄断累死了客服警务我配偶王培荣我  </p>
+                                由产品管理，订单及客户关系管理<br>
+                                供应链及仓储物流管理<br>
+                                客户后台系统及集成接口<br>
+                                多渠道电商运营管理<br>
+                                整合的数据分析工具等组成的<br>
+                                完整的云端电商软件平台<br>
+                                全部由VO自主开发
                             <div class="more">了解更多</div>
                         </div>
                     </div>
@@ -270,7 +276,7 @@
                             <!-- LAYERS -->
 
                             <!-- LAYER NR. 1 -->
-                            <div class="tp-caption tp-resizeme largewhitebg"
+                            <div class="tp-caption tp-resizeme"
                                  style="font-size: 36px;color: #4E4949;background: transparent;"
 
                                  data-frames='[{"delay":0,"speed":300,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},
@@ -279,131 +285,33 @@
                                  data-x="center"
                                  data-y="bottom"
                                  data-hoffset="0"
-                                 data-voffset="120"
+                                 data-voffset="['120','120','20','0']"
                                  data-width="['auto']"
                                  data-height="['auto']"
+                                 data-fontsize="['36', '36', '24', '24']"
 
                             >
                                 Liking.com
                             </div>
                             <!-- LAYER NR. 2 -->
                             <div class="tp-caption tp-resizeme largewhitebg"
-                                 style="color: #4E4949;background: transparent;"
                                  data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['40','40','40','0']"
-                                 data-fontsize="['12','12','12','10']" data-lineheight="['30','30','25','22']"
-                                 data-width="['740','481','360','260']" data-height="none" data-whitespace="normal"
+                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['40','40','0','0']"
+                                 data-fontsize="['12','12','12','12']" data-lineheight="['30','30','25','22']"
+                                 data-width="['740','481','360','300']" data-height="none" data-whitespace="normal"
                                  data-type="text" data-responsive_offset="on"
-
+                                 data-color="['#4E4949','#4E4949','transparent','transparent']"
                                  data-frames='[{}]' data-textalign="['center','center','center','center']"
                                  data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
                                  data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                                 style="z-index: 12; min-width: 500px; max-width: 500px; white-space: normal;color: #807876;"
+                                 style="z-index: 12;font-family:SourceHanSansCN-Normal;background: transparent;font-size: 12px; min-width: 740px; max-width: 740px; white-space: normal;color: #807876;
+                            transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;
+                            ">
 
-                            >
+
                                 你渴望获得个性化的生活方式，用时尚的态度活出自己喜欢的样子。对此LIKING
                                 感同身受，这激励我们链接全球时尚，只为满足你的渴求。通过LIKING可以实现真我，尽情享受专属你的精彩生活。
-                            </div>
 
-
-                        </li>
-                        <!-- SLIDE  -->
-                        <li data-index="rs-146" data-transition="fade" data-slotamount="7" data-hideafterloop="0"
-                            data-hideslideonmobile="off" data-easein="default" data-easeout="default"
-                            data-masterspeed="300"
-                            data-thumb="assets/images/food6-150x100.jpg" data-rotate="0" data-saveperformance="off"
-                            data-title="Spicy Chili Soup" data-param1="" data-param2="" data-param3="" data-param4=""
-                            data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10=""
-                            data-description="">
-                            <!-- MAIN IMAGE -->
-                            <img src="images/liking.png" alt="" data-bgposition="center top" data-bgfit="contain"
-                                 data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-                            <!-- LAYERS -->
-                            <!-- LAYER NR. 1 -->
-                            <div class="tp-caption tp-resizeme largewhitebg"
-                                 style="font-size: 36px;color: #4E4949;background: transparent;"
-
-                                 data-frames='[{"delay":0,"speed":300,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},
-                                 {"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                                 data-type="text"
-                                 data-x="center"
-                                 data-y="bottom"
-                                 data-hoffset="0"
-                                 data-voffset="120"
-                                 data-width="['auto']"
-                                 data-height="['auto']"
-
-                            >
-                                Liking.com
-                            </div>
-                            <!-- LAYER NR. 2 -->
-                            <div class="tp-caption tp-resizeme largewhitebg"
-                                 style="color: #4E4949;background: transparent;"
-                                 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['40','40','40','0']"
-                                 data-fontsize="['12','12','12','10']" data-lineheight="['30','30','25','22']"
-                                 data-width="['740','481','360','260']" data-height="none" data-whitespace="normal"
-                                 data-type="text" data-responsive_offset="on"
-
-                                 data-frames='[{}]' data-textalign="['center','center','center','center']"
-                                 data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-                                 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                                 style="z-index: 12; min-width: 500px; max-width: 500px; white-space: normal;color: #807876;"
-
-                            >
-                                你渴望获得个性化的生活方式，用时尚的态度活出自己喜欢的样子。对此LIKING
-                                感同身受，这激励我们链接全球时尚，只为满足你的渴求。通过LIKING可以实现真我，尽情享受专属你的精彩生活。
-                            </div>
-
-
-                        </li>
-                        <!-- SLIDE  -->
-                        <li data-index="rs-147" data-transition="fade" data-slotamount="7" data-hideafterloop="0"
-                            data-hideslideonmobile="off" data-easein="default" data-easeout="default"
-                            data-masterspeed="300"
-                            data-thumb="assets/images/food3-150x100.jpg" data-rotate="0" data-saveperformance="off"
-                            data-title="Classic Bolognese" data-param1="" data-param2="" data-param3="" data-param4=""
-                            data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10=""
-                            data-description="">
-                            <!-- MAIN IMAGE -->
-                            <img src="images/liking.png" alt="" data-bgposition="center top" data-bgfit="contain"
-                                 data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-                            <!-- LAYERS -->
-
-                            <!-- LAYER NR. 1 -->
-                            <div class="tp-caption tp-resizeme largewhitebg"
-                                 style="font-size: 36px;color: #4E4949;background: transparent;"
-
-                                 data-frames='[{"delay":0,"speed":300,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},
-                                 {"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                                 data-type="text"
-                                 data-x="center"
-                                 data-y="bottom"
-                                 data-hoffset="0"
-                                 data-voffset="120"
-                                 data-width="['auto']"
-                                 data-height="['auto']"
-
-                            >
-                                Liking.com
-                            </div>
-                            <!-- LAYER NR. 2 -->
-                            <div class="tp-caption tp-resizeme largewhitebg"
-                                 style="color: #4E4949;background: transparent;"
-                                 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['40','40','40','0']"
-                                 data-fontsize="['12','12','12','10']" data-lineheight="['30','30','25','22']"
-                                 data-width="['740','481','360','260']" data-height="none" data-whitespace="normal"
-                                 data-type="text" data-responsive_offset="on"
-
-                                 data-frames='[{}]' data-textalign="['center','center','center','center']"
-                                 data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-                                 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                                 style="z-index: 12; min-width: 500px; max-width: 500px; white-space: normal;color: #807876;"
-
-                            >
-                                你渴望获得个性化的生活方式，用时尚的态度活出自己喜欢的样子。对此LIKING
-                                感同身受，这激励我们链接全球时尚，只为满足你的渴求。通过LIKING可以实现真我，尽情享受专属你的精彩生活。
                             </div>
 
 
@@ -525,8 +433,13 @@
 
             /* options are 'auto', 'fullwidth' or 'fullscreen' */
             sliderLayout: 'auto',
-            gridwidth: 1920,
-            gridheight: 900,
+            responsiveLevels: [1920, 1024, 778, 480],
+            gridwidth:[1920, 1024, 778, 480],
+            gridheight:[980, 522, 403, 245],
+
+            /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
+            visibilityLevels:[1920, 1024, 778, 480],
+
             /* basic navigation arrows and bullets */
             navigation: {
 
@@ -567,7 +480,7 @@
 
             sliderType: "carousel",
             jsFileLocation: "revolution/js/",
-            sliderLayout: "fullwidth",
+            sliderLayout: "auto",
             dottedOverlay: "none",
             delay: 9000,
             navigation: {
@@ -577,10 +490,10 @@
                 mouseScrollReverse: "default",
                 onHoverStop: "off",
                 arrows: {
-                    style: "metis",
+                    style: "hesperiden",
                     enable: true,
                     hide_onmobile: true,
-                    hide_under: 768,
+                    hide_under: 0,
                     hide_onleave: false,
                     tmp: '',
                     left: {
@@ -604,7 +517,7 @@
                 vertical_align: "center",
                 fadeout: "on",
                 vary_fade: "on",
-                maxVisibleItems: 5,
+                maxVisibleItems: 3,
                 infinity: "on",
                 space: 100,
                 stretch: "off",
@@ -612,9 +525,11 @@
                 easing: "Power3.easeInOut",
                 speed: "800"
             },
+            responsiveLevels: [1240, 1024, 778, 480],
             visibilityLevels: [1240, 1024, 778, 480],
-            gridwidth: 1050,
-            gridheight: 800,
+            gridwidth: [1050, 1050, 680, 300],
+            gridheight: [800, 800, 518, 229],
+
             lazyType: "none",
             shadow: 0,
             spinner: "off",
@@ -659,12 +574,13 @@
             for (; len > -1; len--) {
                 var that = $sections.eq(len);
                 if (scrollTop >= that.offset().top) {
-                    console.log(scrollTop + "--" + that.offset().top);
+                    //console.log(scrollTop + "--" + that.offset().top);
                     $navs.removeClass('current').eq(len).addClass('current');
                     break;
                 }
             }
         }
+
     });
 
 
