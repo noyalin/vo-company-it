@@ -372,10 +372,16 @@ body {
 
 /*about us*/
 .about-main {
-    margin-top: 70px;
+    margin-top: 63px;
 }
 
-/*尾部*/
+.about-main img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+    /*尾部*/
 .foot {
     background: #1A1818;
     font-size: 12px;
@@ -591,6 +597,10 @@ body {
 
     .main .part {
         margin-bottom: 20px;
+    }
+    /*关于我们*/
+    .about-main {
+        margin-top: 50px;
     }
 
     .foot {
