@@ -371,16 +371,71 @@ body {
 }
 
 /*about us*/
-.about-main {
-    margin-top: 63px;
+.other-page {
+    position: relative;
 }
 
-.about-main img{
+.other-page img{
     max-width: 100%;
     height: auto;
 }
+.other-page .cate-wrap{
+    padding: 0;
+}
+.other-page .cate{
+    padding: 20px 0;
+    color: #938d8b;
+}
+.other-page .cate span{
+    margin:0 20px;
+}
+.other-page .about-main{
+    padding: 50px;
+    background: #fff;
+    color: #938d8b;
+    position: relative;
+    margin: 0;
+}
+.other-page .page-left{
+    position: absolute;
+    left: -40px;
+    top: 0px;
+}
+.other-page .about-main .page-left a{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    line-height: 1.2;
+}
+.other-page .about-main .about-content{
+    margin-top: 40px;
+    line-height: 1.6;
+}
+.other-page .about-main .introduce{
+    position: relative;
+    top: 0;
+    width: 40px;
+    height: 100px;
+    background: #4e4949;
+    color: #fff;
+    text-align: center;
+}
 
-
+.other-page .about-main .contact{
+    position: relative;
+    width: 30px;
+    height: 80px;
+    left: 10px;
+    background: #cac3c1;
+    color: #fff;
+    text-align: center;
+}
+.other-page .about-main .contact a{
+    font-size: 12px;
+}
     /*尾部*/
 .foot {
     background: #1A1818;
@@ -560,7 +615,6 @@ body {
     .main .content {
         width: 51%;
     }
-
 }
 
 @media (max-width: 768px) {
@@ -599,8 +653,32 @@ body {
         margin-bottom: 20px;
     }
     /*关于我们*/
-    .about-main {
-        margin-top: 50px;
+    .other-page .about-main{
+        padding: 30px;
+    }
+    .other-page .page-left{
+        position: absolute;
+        left: -30px;
+        top: 0;
+    }
+    .other-page .about-main .introduce{
+        position: relative;
+        top: 0;
+        width: 30px;
+        height: 90px;
+        background: #4e4949;
+        color: #fff;
+        text-align: center;
+    }
+
+    .other-page .about-main .contact{
+        position: relative;
+        width: 20px;
+        height: 60px;
+        left: 10px;
+        background: #cac3c1;
+        color: #fff;
+        text-align: center;
     }
 
     .foot {
