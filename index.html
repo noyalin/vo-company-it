@@ -436,12 +436,35 @@
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.js"></script>
-<!--<script src="js/swiper-4.1.0.min.js"></script>-->
+
 <script type="text/javascript">
 
-    /* https://learn.jquery.com/using-jquery-core/document-ready/ */
-    jQuery(document).ready(function () {
 
+    jQuery(document).ready(function () {
+        //nav 滚动
+        var $navs = $('nav ul li'),// 导航
+            $sections = $('.scroll-content'), // 内容
+            $window = $(window),
+            navLength = $navs.length - 1;
+
+        scrollFunc();
+        $window.on('scroll', scrollFunc);
+
+        function scrollFunc() {
+            var scrollTop = $window.scrollTop(),
+                len = navLength;
+
+            for (; len > -1; len--) {
+                var that = $sections.eq(len);
+                if (scrollTop >= that.offset().top) {
+                    //console.log(scrollTop + "--" + that.offset().top);
+                    $navs.removeClass('current').eq(len).addClass('current');
+                    break;
+                }
+            }
+        }
+
+        //轮播
         /* initialize the slider based on the Slider's ID attribute */
         jQuery('#rev_slider_1').show().revolution({
 
@@ -568,32 +591,9 @@
 
         //tab
         $('#myTabs a').click(function (e) {
-            e.preventDefault()
+            e.preventDefault();
             $(this).tab('show')
         })
-
-        //nav 滚动
-        var $navs = $('nav ul li'),// 导航
-            $sections = $('.scroll-content'), // 内容
-            $window = $(window),
-            navLength = $navs.length - 1;
-
-        scrollFunc();
-        $window.on('scroll', scrollFunc);
-
-        function scrollFunc() {
-            var scrollTop = $window.scrollTop(),
-                len = navLength;
-
-            for (; len > -1; len--) {
-                var that = $sections.eq(len);
-                if (scrollTop >= that.offset().top) {
-                    //console.log(scrollTop + "--" + that.offset().top);
-                    $navs.removeClass('current').eq(len).addClass('current');
-                    break;
-                }
-            }
-        }
 
     });
 
