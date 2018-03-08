@@ -60,6 +60,11 @@ body {
     padding: 0;
 }
 
+a,a:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .font-sb {
     font-family: SourceHanSansCN-Bold;
 }
@@ -101,6 +106,16 @@ body {
     color: #777373;
     text-align: center;
     font-family: NotoSansHans-Bold;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s;
 }
 
 #header .nav li.active a {
@@ -110,6 +125,11 @@ body {
 #header .nav li a:hover {
     background: transparent;
     color: #f85e63;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 /*轮播*/
@@ -235,14 +255,25 @@ body {
 
 .main .section .more {
     position: relative;
+
+    margin-bottom: 30px;
+    font-family: SourceHanSansCN-Bold;
+}
+
+.main .section .more a{
     padding: 10px 20px;
     background: #F85E63;
     border-radius: 20px;
-    color: #fff;
     width: 150px;
     text-align: center;
-    margin-bottom: 30px;
-    font-family: SourceHanSansCN-Bold;
+    color: #ffffff;
+    display: block;
+}
+
+.main .section a:hover{
+    border: 1px solid #F85E63;
+    background: #ffffff;
+    color: #F85E63;
 }
 
 .main .part {
@@ -271,6 +302,24 @@ body {
 .main .sec4 .sec4-icon {
     text-align: center;
     margin-bottom: 30px;
+    -ms-transform:rotate(0deg); 	/* IE 9 */
+    -moz-transform:rotate(0deg); 	/* Firefox */
+    -webkit-transform:rotate(0deg); /* Safari 和 Chrome */
+    -o-transform:rotate(0deg); 	/* Opera */
+    transform: rotate(0deg);
+    -moz-transition: all 1s; /* Firefox 4 */
+    -webkit-transition: all 1s; /* Safari 和 Chrome */
+    -o-transition: all 1s; /* Opera */
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.main .sec4 .sec4-icon:hover{
+    -ms-transform:rotate(360deg); 	/* IE 9 */
+    -moz-transform:rotate(360deg); 	/* Firefox */
+    -webkit-transform:rotate(360deg); /* Safari 和 Chrome */
+    -o-transform:rotate(360deg); 	/* Opera */
+    transform: rotate(360deg);
 }
 
 .main .sec4 .sec4-title {
@@ -285,7 +334,11 @@ body {
     font-size: 12px;
     color: #807876;
     line-height: 20px;
-    padding: 0 30px;
+    padding: 5px 30px;
+}
+
+.main .sec4 .sec4-detail:hover {
+    background: #FAFAFA;
 }
 
 .main .sec6 .nav-tabs {
@@ -316,6 +369,13 @@ body {
 }
 
 .main .sec6 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: #fff;
+    cursor: pointer;
+    background-color: #F85E63;
+    border: 0;
+}
+
+.main .sec6 .nav-tabs li a:hover{
     color: #fff;
     cursor: pointer;
     background-color: #F85E63;
@@ -655,6 +715,7 @@ body {
 
     #header .nav li.active a {
         border-bottom: 0;
+        color: #f85e63;
     }
 
     .main .banner .banner-title1{
