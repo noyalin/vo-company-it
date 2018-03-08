@@ -113,6 +113,33 @@ body {
 }
 
 /*轮播*/
+.main .banner{
+    position: relative;
+}
+.main .banner img{
+    max-width: 100%;
+    height: auto;
+}
+.main .banner .banner-title1{
+    position: absolute;
+    width: 645px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 1.1;
+    font-family: HelveticaNeue_Bold;
+}
+.main .banner .banner-title2{
+    position: relative;
+    font-family: HelveticaNeue_Bold;
+    font-size: 12px;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
 .main .rev_slider li {
     text-align: center;
 }
@@ -207,6 +234,7 @@ body {
 }
 
 .main .section .more {
+    position: relative;
     padding: 10px 20px;
     background: #F85E63;
     border-radius: 20px;
@@ -548,6 +576,9 @@ body {
 }
 
 @media (max-width: 992px) {
+    .main .banner .banner-title1{
+        font-size: 48px;
+    }
     .main .section {
         margin: 60px auto;
     }
@@ -626,6 +657,14 @@ body {
         border-bottom: 0;
     }
 
+    .main .banner .banner-title1{
+        font-size: 24px;
+        width: auto;
+    }
+    .main .banner .banner-title2{
+
+
+    }
     .main .content {
         width: 100%;
     }
