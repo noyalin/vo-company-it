@@ -87,6 +87,10 @@ a,a:hover{
     width: 168px;
     position: absolute;
     top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
     transform: translate(0%, -50%);
 }
 
@@ -145,7 +149,11 @@ a,a:hover{
     width: 645px;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     color: #FFFFFF;
     text-align: center;
     font-weight: 400;
@@ -418,6 +426,10 @@ a,a:hover{
     position: fixed;
     right: 10px;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
     transform: translateY(-50%);
     z-index: 1000;
 }
@@ -455,6 +467,10 @@ a,a:hover{
     background: #f2f2f2;
     opacity: 0.1;
     margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
     transform: translateX(-50%);
 }
 
@@ -494,7 +510,11 @@ a,a:hover{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
     line-height: 1.2;
 }
