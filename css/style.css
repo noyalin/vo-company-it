@@ -349,45 +349,35 @@ a,a:hover{
     background: #FAFAFA;
 }
 
-.main .sec6 .nav-tabs {
+.main .sec6 .carousel-indicators {
     display: table;
     margin: 0 auto 60px auto;
     border: 0;
 }
 
-.main .sec6 .nav-tabs li {
-    display: table-cell;
-}
+/*.main .sec6 .carousel-indicators li {*/
+    /*display: table-cell;*/
+/*}*/
 
-.main .sec6 .nav-tabs li a {
-    color: #fff;
-    background: #CAC3C1;
-    font-size: 18px;
-    border-radius: 0;
-    margin-right: 20px;
-    display: inline-block;
-    width: 200px;
-    text-align: center;
-    border: 0;
-    font-family: SourceHanSansCN-Bold;
-}
 
-.main .sec6 .nav-tabs li:last-child a {
-    margin: 0;
-}
 
-.main .sec6 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+/*.main .sec6 .carousel-indicators li:last-child a {*/
+    /*margin: 0;*/
+/*}*/
+
+/*.main .sec6 .carousel-indicators > li.active > a, .carousel-indicators > li.active > a:hover, .carousel-indicators > li.active > a:focus {*/
+    /*color: #fff;*/
+    /*cursor: pointer;*/
+    /*background-color: #F85E63;*/
+    /*border: 0;*/
+/*}*/
+
+.main .sec6 .carousel-indicators li:hover{
     color: #fff;
     cursor: pointer;
     background-color: #F85E63;
     border: 0;
-}
 
-.main .sec6 .nav-tabs li a:hover{
-    color: #fff;
-    cursor: pointer;
-    background-color: #F85E63;
-    border: 0;
 }
 
 .main .sec6 .brand {
@@ -397,7 +387,8 @@ a,a:hover{
 }
 
 .main .sec6 .brand img {
-    max-width: 100%;
+    max-width: 80%;
+    max-height: 140px;
     height: auto;
     display: inline-block;
 }
@@ -474,6 +465,52 @@ a,a:hover{
     transform: translateX(-50%);
 }
 
+/*行业案例 轮播*/
+.carousel-tab{
+    position: relative;
+}
+.carousel-indicators{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    width:100%;
+    margin-left:0;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.carousel-indicators li{
+    text-indent: 0;
+    padding: 10px 15px;
+    color: #E5E5E5;
+    background: #ffffff;
+    font-size: 18px;
+    border-radius: 0;
+    margin: 0 20px 0 0;
+    display: inline-block;
+    width: 200px;
+    height:auto;
+    text-align: center;
+    border: 2px solid #F2F2F2;
+    font-family: SourceHanSansCN-Bold;
+}
+.carousel-indicators li:last-child{
+    margin: 0;
+}
+.carousel-indicators .active{
+    width: 200px;
+    height:auto;
+    margin-right: 20px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #F85E63;
+    border: 0;
+}
+.carousel-control.left,.carousel-control.right{
+    background-image: none;
+}
 /*about us*/
 .other-page {
     position: relative;
@@ -642,11 +679,11 @@ a,a:hover{
 }
 
 @media (min-width: 992px) {
-    .main .sec6 .tab-pane .row .brand-wrap:last-child {
+    .main .sec6 .brand-container .row .brand-wrap:last-child {
         border-right: 0;
     }
 
-    .main .sec6 .tab-pane .row:last-child .brand-wrap {
+    .main .sec6 .brand-container .row:last-child .brand-wrap {
         border-bottom: 0;
     }
 
@@ -671,20 +708,30 @@ a,a:hover{
         margin-left: 32px;
     }
 
-    .main .sec6 .tab-pane .row .brand-wrap:nth-child(2n) {
+    .main .sec6 .brand-container .row .brand-wrap:nth-child(2n) {
         border-right: 0;
     }
 
-    .main .sec6 .tab-pane .row .brand-wrap {
+    .main .sec6 .brand-container .row .brand-wrap {
         border-bottom: 1px solid #E5E5E5;
     }
 
-    .main .sec6 .tab-pane .row:last-child .brand-wrap:nth-child(3) {
+    .main .sec6 .brand-container .row:last-child .brand-wrap:nth-child(3) {
         border-bottom: 0;
     }
 
-    .main .sec6 .tab-pane .row:last-child .brand-wrap:nth-child(4) {
+    .main .sec6 .brand-container .row:last-child .brand-wrap:nth-child(4) {
         border-bottom: 0;
+    }
+
+    .main .sec6 .carousel-indicators li{
+        margin-right: 10px;
+        width: 140px;
+        font-size: 14px;
+    }
+
+    .main .sec6 .carousel-indicators li:last-child{
+        margin-right: 0;
     }
 
     .foot .logo img {
@@ -754,10 +801,14 @@ a,a:hover{
         padding-right: 32px;
     }
 
-    .main .sec6 .nav-tabs li a {
+    .main .sec6 .carousel-indicators li{
         margin-right: 5px;
         width: 100px;
         font-size: 14px;
+    }
+
+    .main .sec6 .carousel-indicators li:last-child{
+        margin-right: 0;
     }
 
     .main .section .title {
