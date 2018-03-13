@@ -433,15 +433,15 @@
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.js"></script>
-<!--<script src = "js/skrollr.min.js" ></script>-->
-<!--&lt;!&ndash;[if lt IE 9]>-->
-<!--<script src="js/skrollr.ie.min.js"></script>-->
-<!--<![endif]&ndash;&gt;-->
-<script type="text/javascript">
-    var s = skrollr.init();
-</script>
+<script src = "js/skrollr.min.js" ></script>
+<!--[if lt IE 9]>
+<script src="js/skrollr.ie.min.js"></script>
+<![endif]-->
 <script type="text/javascript">
     jQuery(document).ready(function () {
+        //动画
+        var s = skrollr.init();
+
         //nav 滚动
         var $navs = $('nav ul li'),// 导航
             $sections = $('.scroll-content'), // 内容
