@@ -31,18 +31,18 @@
 <div id="wrapper" ng-app="">
     <header id="header" role="header" ng-include="'common/head.html'">
     </header>
-    <div class="other-page">
+    <div class="other-page case">
         <div class="other-head">
             <div class="head-title container">
-                <div class="title-en">ABOUT US</div>
-                <div class="title-ch">关于我们</div>
+                <div class="title-en">PRODUCT CENTER</div>
+                <div class="title-ch">行业案例</div>
                 <div class="title-detail">Voyageone one。。。</div>
             </div>
         </div>
         <div class="container">
             <div class="container-fluid">
                 <div class="cate-wrap">
-                    <div class="cate">关于我们<span>></span>公司介绍</div>
+                    <div class="cate">首页<span>></span>关于我们<span>></span>公司介绍</div>
                 </div>
                 <div class="about-main">
                     <div class="about-pic"><img src="images/about.jpg"/></div>
@@ -72,13 +72,12 @@
 <script type="text/javascript">
     $(function () {
         //head当前页样式
-        setTimeout(addClassActive(), 100);
-
+        setTimeout(addClassActive(),100);
         function addClassActive() {
-            if (!$("ul.navbar-nav li").get(0)) {
-                setTimeout(arguments.callee, 100);
-            } else {
-                $("ul.navbar-nav li:eq(4)").addClass("active").siblings().removeClass("active");
+            if(!$("ul.navbar-nav li").get(0)){
+                setTimeout(arguments.callee,100);
+            }else{
+                $("ul.navbar-nav li:eq(3)").addClass("active").siblings().removeClass("active");
             }
         }
     });
