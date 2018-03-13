@@ -398,11 +398,16 @@ a, a:hover {
     border: 0;
 
 }
-
+.main .sec6 .b-shadow{
+    -webkit-box-shadow: 0 2px 48px #cccccc;
+    -moz-box-shadow: 0 2px 48px #cccccc;
+    box-shadow: 0 2px 48px #cccccc;
+}
 .main .sec6 .brand {
     height: 200px;
     position: relative;
     text-align: center;
+    background: #FFFFFF;
 }
 
 .main .sec6 .brand img {
@@ -492,7 +497,9 @@ a, a:hover {
 .carousel-tab {
     position: relative;
 }
-
+.carousel{
+    height: 813px;
+}
 .carousel-indicators {
     position: relative;
     top: 0;
@@ -535,7 +542,9 @@ a, a:hover {
     background-color: #F85E63;
     border: 0;
 }
-
+.carousel-inner{
+    overflow: visible;
+}
 .carousel-control {
     width: 30px;
     left: 10px;
@@ -592,7 +601,7 @@ a, a:hover {
 }
 
 .main .sec6 .xls .title2 {
-    margin-top: 10px;
+    margin: 10px 0 30px 0;
     text-align: center;
     font-size: 12px;
     color: #807876;
@@ -687,6 +696,11 @@ a, a:hover {
 
 .other-page .other-head .head-title .title-detail {
     font-size: 16px;
+}
+
+.other-page .other-main{
+    margin-bottom: 30px;
+    background: #FFFFFF;
 }
 
 .other-page img {
@@ -907,6 +921,16 @@ a, a:hover {
         margin-left: -21%;
         margin-top: 5%;
     }
+
+    .main .sec6 .carousel {
+        height: 756px;
+    }
+    .main .sec6 .xls .title1{
+        margin-top: 0;
+    }
+    .main .sec6 .xls .title2{
+        margin: 0px 0 20px 0;
+    }
 }
 
 @media (min-width: 992px) {
@@ -940,22 +964,28 @@ a, a:hover {
         margin-left: 32px;
     }
 
-    .main .sec6 .brand-container .row .brand-wrap:nth-child(2n) {
-        border-right: 0;
+    .main .sec4 .sec4-icon{
+        margin-top: 30px;
     }
+    /*.main .sec6 .brand-container .row .brand-wrap:nth-child(2n) {*/
+        /*border-right: 0;*/
+    /*}*/
 
-    .main .sec6 .brand-container .row .brand-wrap {
-        border-bottom: 1px solid #E5E5E5;
+    /*.main .sec6 .brand-container .row .brand-wrap {*/
+        /*border-bottom: 1px solid #E5E5E5;*/
+    /*}*/
+
+    /*.main .sec6 .brand-container .row:last-child .brand-wrap:nth-child(3) {*/
+        /*border-bottom: 0;*/
+    /*}*/
+
+    /*.main .sec6 .brand-container .row:last-child .brand-wrap:nth-child(4) {*/
+        /*border-bottom: 0;*/
+    /*}*/
+
+    .carousel {
+         height: 705px;
     }
-
-    .main .sec6 .brand-container .row:last-child .brand-wrap:nth-child(3) {
-        border-bottom: 0;
-    }
-
-    .main .sec6 .brand-container .row:last-child .brand-wrap:nth-child(4) {
-        border-bottom: 0;
-    }
-
     .main .sec6 .carousel-indicators li {
         margin-right: 10px;
         width: 120px;
@@ -966,8 +996,13 @@ a, a:hover {
         margin-right: 0;
     }
 
-    .main .sec6 .carousel-control {
-        display: none;
+    .main .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev{
+        margin-left: 0px;
+        left: 0;
+    }
+    .main .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next{
+        margin-right: 0px;
+        right:0;
     }
 
     .main .sec6 .app img {
@@ -1035,10 +1070,6 @@ a, a:hover {
         width: auto;
     }
 
-    .main .banner .banner-title2 {
-
-    }
-
     .main .content {
         width: 100%;
     }
@@ -1046,10 +1077,25 @@ a, a:hover {
     .section-content {
         padding-right: 32px;
     }
+    .main .section .pic {
+         margin-left: 0;
+    }
+    .main .sec6 .brand {
+        height: 80px;
+    }
 
+    .main .sec6 .brand img{
+        max-height: 60px;
+    }
+    .main .sec6 .carousel{
+        height: 620px;
+    }
+    .main .sec6 .carousel-indicators {
+        margin: 0 auto 20px auto;
+    }
     .main .sec6 .carousel-indicators li {
-        margin-right: 5px;
-        width: 100px;
+        margin-right: 2px;
+        width: 90px;
         font-size: 14px;
     }
 
@@ -1057,17 +1103,37 @@ a, a:hover {
         margin-right: 0;
     }
 
-    .main .sec6 .app img {
-        max-width: 280px;
+    .main .sec6 .carousel-control {
+        display: none;
     }
-
+    .main .sec6 .xls .title1{
+        font-size: 20px;
+    }
+    .main .sec6 .app .app-wrap{
+        text-align: center;
+    }
+    .main .sec6 .app img {
+        max-width: 150px;
+        float: none;
+    }
+    .main .sec6 .app .app-pic{
+        text-align: center;
+    }
     .main .sec6 .app .app2 {
-        margin-left: -10%;
-        margin-top: 5%;
+        margin-left: -40px;
+        margin-top: 20px;
     }
 
     .main .sec6 .app .title-wrap {
-        margin-top: 100px;
+        margin-top: 5px;
+    }
+
+    .main .sec6 .app .title-wrap .title1 {
+        font-size: 24px;
+    }
+
+    .main .sec6 .app .title-wrap .title2 {
+        margin-top: 6px;
     }
 
     .main .section .title {
@@ -1114,6 +1180,10 @@ a, a:hover {
         text-align: center;
     }
 
+    .other-page .container .pic img {
+        max-width: 100%;
+        height: auto;
+    }
     .foot {
         padding: 50px 50px;
     }
