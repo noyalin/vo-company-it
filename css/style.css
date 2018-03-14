@@ -60,7 +60,57 @@ a, a:hover {
     cursor: pointer;
     text-decoration: none;
 }
+/*.navbar-toggle .icon-bar.close:first-child{*/
 
+    /*position:relative;*/
+
+    /*width:0.3em;*/
+
+    /*height:1.5em;*/
+
+    /*background: #333;*/
+
+    /*-webkit-transform: rotate(45deg);*/
+
+    /*-moz-transform: rotate(45deg);*/
+
+    /*-o-transform: rotate(45deg);*/
+
+    /*-ms-transform: rotate(45deg);*/
+
+    /*transform: rotate(45deg);*/
+
+    /*display: inline-block;*/
+
+/*}*/
+
+.close:after{
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width:0.3em;
+
+    height:1.5em;
+
+    background: #333;
+
+    -webkit-transform: rotate(270deg);
+
+    -moz-transform: rotate(270deg);
+
+    -o-transform: rotate(270deg);
+
+    -ms-transform: rotate(270deg);
+
+    transform: rotate(270deg);
+
+}
 .text-l {
     text-align: left;
 }
@@ -436,7 +486,7 @@ a, a:hover {
 
 /*scroll nav*/
 .scroll-nav {
-    background: url(../images/nav_bg.png) no-repeat;
+    /*background: url(../images/nav_bg.png) no-repeat;*/
     width: 10px;
     position: fixed;
     right: 10px;
@@ -461,8 +511,8 @@ a, a:hover {
     list-style: none;
     margin-bottom: 30px;
     border-radius: 50%;
-    background: #f2f2f2;
-    opacity: 0.1;
+    background: #808080;
+    opacity: 0.3;
 }
 
 .scroll-nav ul li:last-child {
@@ -479,8 +529,8 @@ a, a:hover {
     top: 0;
     width: 2px;
     height: 100%;
-    background: #f2f2f2;
-    opacity: 0.1;
+    background: #808080;
+    opacity: 0.3;
     margin-left: 50%;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
