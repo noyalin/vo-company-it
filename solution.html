@@ -22,13 +22,13 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-3.2.1.js"></script>
-    <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
-    <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
 
     <script src="js/angular.min.js"></script>
+    <script src="js/angular-ui-router.js"></script>
+
 </head>
 <body>
-<div id="wrapper" ng-app="">
+<div id="wrapper" ng-app="myApp">
     <header id="header" role="header" ng-include="'common/head.html'">
     </header>
     <div class="other-page solution">
@@ -40,147 +40,21 @@
             </div>
         </div>
         <div class="container other-main">
-                <!--新零售解决方案-->
-                <div id="promo2">
-                    <div id="s1" >
-                        <div class="row">
-                            <div class="title col-md-12" data-anchor-target="#promo2"
-                                 data-55p-center="opacity:0;margin-left:40px"
-                                 data-30p-center="opacity:1;margin-left:0px">新零售解决方案
-                            </div>
-                            <div class="col-md-12">
-                                <div class="line"></div>
-                            </div>
-                            <div class="col-md-6 col-sm-5 col-xs-5" >
-                                <div class="detail">
-
-                                    <div class="content" data-anchor-target="#promo2"
-                                         data-55p-center="opacity:0;margin-left:-200px"
-                                         data-30p-center="opacity:1;margin-left:0px">
-                                        <div>开放平台</div>
-                                        <div>赋能供应商</div>
-                                        <div>新品申报</div>
-                                        <div>供应链监控</div>
-                                        <div>营销工具</div>
-                                        <div>财务结算</div>
-                                        <div>促销活动管理</div>
-                                        <div>生意参谋</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-7 col-xs-7">
-                                <div class="pic text-r" data-anchor-target="#promo2"
-                                     data-45p-center="opacity:0;left:100px" data-30p-center="opacity:1;left:0px">
-                                    <img
-                                            src="images/新零售.png"/></div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-3 page-nav">
+                    <ul class="left-nav">
+                        <li><a ui-sref="sale">新零售解决方案</a></li>
+                        <li><a ui-sref="ec">跨境电商解决方案</a></li>
+                        <li><a ui-sref="app">APP解决方案</a></li>
+                        <li><a ui-sref="wechat">微信小程序生态圈解决方案</a></li>
+                    </ul>
                 </div>
-                <!--跨境电商解决方案-->
-                <div id="promo3">
-                    <div id="s2" >
-                        <div class="row">
-                            <div class="title col-md-12" data-anchor-target="#promo3"
-                                 data-55p-center="opacity:0;margin-left:40px"
-                                 data-30p-center="opacity:1;margin-left:0px">跨境电商解决方案
-                            </div>
-                            <div class="col-md-12">
-                                <div class="line"></div>
-                            </div>
-                            <div class="col-md-6 col-sm-5 col-xs-5">
-                                <div class="detail">
-                                    <div class="content text-l" data-anchor-target="#promo3"
-                                         data-55p-center="opacity:0;margin-left:-200px"
-                                         data-30p-center="opacity:1;margin-left:0px">
-                                        <div>开放平台</div>
-                                        <div>产品数字化管理服务</div>
-                                        <div>订单管理服务</div>
-                                        <div>仓储管理服务</div>
-                                        <div>物流管理服务</div>
-                                        <div>多平台对接服务(天猫、京东、小红书、聚美、考拉、线下零售、亚马逊、eBay、Lazada)</div>
-                                        <div>商业智能分析服务</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-7 col-xs-7">
+                <div class="col-md-10 col-sm-9">
+                    <div ui-view></div> <!-- 父View -->
 
-                                <div class="pic text-r" data-anchor-target="#promo3"
-                                     data-45p-center="opacity:0;left:100px" data-30p-center="opacity:1;left:0px">
-                                    <img
-                                            src="images/system.png"/></div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <!--APP解决方案-->
-                <div id="promo4">
-                    <div  id="s3" >
-                        <div class="row">
-                            <div class="title col-md-12" data-anchor-target="#promo4"
-                                 data-55p-center="opacity:0;margin-left:40px"
-                                 data-30p-center="opacity:1;margin-left:0px">APP解决方案
-                            </div>
-                            <div class="col-md-12">
-                                <div class="line"></div>
-                            </div>
-                            <div class="col-md-6  col-sm-5 col-xs-5">
-                                <div class="detail">
-                                    <div class="content" data-anchor-target="#promo4"
-                                         data-55p-center="opacity:0;margin-left:-200px"
-                                         data-30p-center="opacity:1;margin-left:0px">
-                                        <div>Adivdiv解决方案</div>
-                                        <div>IOS设计开发</div>
-                                        <div>Android设计开发</div>
-                                        <div>商城Adivdiv设计开发</div>
-                                        <div>内容社区Adivdiv设计开发</div>
-                                    </div>
+            </div>
 
-                                </div>
-                            </div>
-                            <div class="col-md-6  col-sm-7 col-xs-7">
-                                <div class="pic text-r" data-anchor-target="#promo4"
-                                     data-45p-center="opacity:0;left:100px" data-30p-center="opacity:1;left:0px">
-                                    <img
-                                            src="images/app.png"/></div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <!--微信小程序-->
-                <div id="promo5">
-                    <div  id="s4"  >
-                        <div class="row">
-                            <div class="title col-md-12" data-anchor-target="#promo5"
-                                 data-55p-center="opacity:0;margin-left:40px"
-                                 data-30p-center="opacity:1;margin-left:0px">微信小程序生态圈解决方案
-                            </div>
-                            <div class="col-md-12">
-                                <div class="line"></div>
-                            </div>
-                            <div class="col-md-6  col-sm-5 col-xs-5">
-                                <div class="detail">
-                                    <div class="content text-l" data-anchor-target="#promo5"
-                                         data-55p-center="opacity:0;margin-left:-200px"
-                                         data-30p-center="opacity:1;margin-left:0px">
-                                        <div>微信小程序生态圈解决方案</div>
-                                        <div>微商城小程序设计开发</div>
-                                        <div>分销小程序设计开发</div>
-                                        <div>内容社区小程序设计开发</div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-md-6  col-sm-7 col-xs-7">
-                                <div class="pic text-r" data-anchor-target="#promo5"
-                                     data-45p-center="opacity:0;left:-100px" data-30p-center="opacity:1;left:0px">
-                                    <img  src="images/wx.png"/></div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
 
         </div>
 
@@ -194,7 +68,7 @@
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.js"></script>
-<!--<script src="js/swiper-4.1.0.min.js"></script>-->
+<script src="js/main.js"></script>
 <script type="text/javascript">
     $(function () {
         //head当前页样式
