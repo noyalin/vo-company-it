@@ -22,13 +22,13 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-3.2.1.js"></script>
-    <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
-    <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
 
     <script src="js/angular.min.js"></script>
+
+    <script src="js/angular-ui-router.js"></script>
 </head>
 <body>
-<div id="wrapper" ng-app="">
+<div id="wrapper" ng-app="myApp">
     <header id="header" role="header" ng-include="'common/head.html'">
     </header>
     <div class="other-page product">
@@ -40,96 +40,19 @@
             </div>
         </div>
         <div class="container other-main">
-            <div class="title row">
-                CMS
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-ms-12">
-                        <div class="line"></div>
-                        <div class="content">
-                            <div>商品管理及检索功能</div>
-                            <div>产品价格和库存管理功能</div>
-                            <div>多平台商品上新功能</div>
-                            <div>店铺管理功能（设置店铺内分类，设置货架，设置组合商品，设置平台默认属性，设置平台品牌匹配等）</div>
-                            <div>商品素材管理（图片管理，尺码对照表，商品自定义标签等）</div>
-                            <div>平台活动管理功能</div>
-                            <div>维护设置功能（品牌黑名单，错误处理等）</div>
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-3 page-nav">
+                    <ul class="left-nav">
+                        <li><a ui-sref="cms">cms</a></li>
+                        <li><a ui-sref="vms">vms</a></li>
+                        <li><a ui-sref="oms">oms</a></li>
+                        <li><a ui-sref="wms">wms</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-10 col-sm-9">
+                    <div ui-view></div>
                 </div>
             </div>
-            <div class="title row">
-                VMS
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-ms-12">
-                        <div class="line"></div>
-                        <div class="content">
-                            <div>商品管理功能</div>
-                            <div>商品采购功能</div>
-                            <div>供应商订单管理功能</div>
-                            <div>物流管理功能</div>
-                            <div>账单管理功能</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="title row">
-                OMS
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-ms-12">
-                        <div class="line"></div>
-                        <div class="content">
-                            <div>实现多平台订单的自动导入</div>
-                            <div>对接天猫京东售后，快速处理多店退换货</div>
-                            <div>入驻阿里聚石塔、京东云鼎，享有安全保障</div>
-                            <div>快速漏单检查以及补单处理</div>
-                            <div>支持多平台多店铺统一管理</div>
-                            <div>提供多种自动审单策略</div>
-                            <div>赠品管理功能</div>
-                            <div>订单自动进行拆分功能</div>
-                            <div>实现多平台订单的账单核对</div>
-                            <div>订单状态监控功能</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="title row">
-                WMS
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-ms-12">
-                        <div class="line"></div>
-                        <div class="content">
-                            <div>多平台库存实时同步</div>
-                            <div>多平台发货信息实时同步</div>
-                            <div>活动商品库存自动隔离以及还原</div>
-                            <div>合理库存分配算法，自动区分发货港口</div>
-                            <div>可按照仓库所在、包裹大小自动拆分订单</div>
-                            <div>控制入库差异、降低差错率</div>
-                            <div>入库、退货完成后，可自动生成上架理货任务</div>
-                            <div>支持货架级别盘点</div>
-                            <div>因异常状态需要可禁止商品发货、直接冻结库存待问题解决后再解冻进行发货</div>
-                            <div>实时追踪保税仓、备货仓、边境仓等第三方仓库的发货信息并提供展示信息</div>
-                            <div>对于商品实现货架化管理，能有效的管理仓库库存、可售库存和异常库存；</div>
-                            <div>支持无线手持设备以及工作台操作模式（入库，拣货，盘点，打单，装箱，发货）</div>
-                            <div>拣货车/中转箱全部条码化，可实时跟踪货物情况</div>
-                            <div>提供智能补货，当库存低于警戒值时，可自动向品牌方发起采购请求</div>
-                            <div>对接顺丰、申通、中通、EMS、菜鸟等物流平台，高效实现多平台电子面单打印需求</div>
-                            <div>提供菜鸟3divL、4divL物流服务</div>
-                            <div>提供报关资料</div>
-                            <div>提供各种仓库报告</div>
-                            <div>维护设置功能（品牌黑名单，错误处理等）</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
         <!--尾部-->
         <footer>
@@ -140,7 +63,8 @@
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.js"></script>
-    <!--<script src="js/swiper-4.1.0.min.js"></script>-->
+    <script src="js/main.js"></script>
+
     <script type="text/javascript">
         $(function () {
             //head当前页样式

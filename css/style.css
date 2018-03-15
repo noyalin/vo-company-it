@@ -428,21 +428,6 @@ a, a:hover {
     border: 0;
 }
 
-/*.main .sec6 .carousel-indicators li {*/
-/*display: table-cell;*/
-/*}*/
-
-/*.main .sec6 .carousel-indicators li:last-child a {*/
-/*margin: 0;*/
-/*}*/
-
-/*.main .sec6 .carousel-indicators > li.active > a, .carousel-indicators > li.active > a:hover, .carousel-indicators > li.active > a:focus {*/
-/*color: #fff;*/
-/*cursor: pointer;*/
-/*background-color: #F85E63;*/
-/*border: 0;*/
-/*}*/
-
 .main .sec6 .carousel-indicators li:hover {
     color: #fff;
     cursor: pointer;
@@ -778,7 +763,11 @@ a, a:hover {
 .other-page .cate span {
     margin: 0 20px;
 }
-
+.other-page .cat{
+    margin-top: 30px;
+    padding-left: 15px;
+    color: #938d8b;
+}
 .other-page .about-main {
     padding: 50px;
     background: #fff;
@@ -865,28 +854,39 @@ a, a:hover {
 }
 
 /*侧边栏*/
+.page-nav {
+    padding: 0 5px;
+}
 
 .other-page .left-nav {
     list-style: none;
     margin-top: 30px;
     padding: 0;
-    background: #fafafa;
-}
-
-.other-page .left-nav li {
-    margin-bottom: 5px;
+    background: #F85E63;
+    border: 1px solid #F85E63;
+    -moz-box-shadow: 2px 2px 5px #F89FAE;
+    -webkit-box-shadow: 2px 2px 5px #F89FAE;
+    box-shadow: 2px 2px 5px #F89FAE;
 }
 
 .other-page .left-nav li a {
     padding: 10px 5px 10px 8px;
     display: block;
-    background: #fff;
-    color: #F85E63;
-    border: 1px solid #F85E63;
+    background: #F85E63;
+    color: #fff;
+    border-bottom: 1px solid #bb2828;
     font-size: 14px;
-    border-radius: 10px;
+    text-decoration: none;
 }
 
+.other-page .left-nav li:last-child a, .other-page .left-nav li:last-child {
+    border: none;
+}
+
+.other-page .left-nav li a:hover {
+    background: #fff;
+    color: #F85E63;
+}
 
 /*尾部*/
 .foot {
@@ -1152,10 +1152,13 @@ a, a:hover {
     }
 
     .main .banner .banner-title1 {
-        font-size: 24px;
-        width: auto;
+        font-size: 18px;
+        width: 100%;
+        top: 60%;
     }
-
+    .main .banner .banner-title2{
+        margin-top: 10px;
+    }
     .main .content {
         width: 100%;
     }
@@ -1187,13 +1190,16 @@ a, a:hover {
     .main .sec6 .carousel-indicators li {
         margin-right: 2px;
         width: 90px;
-        font-size: 14px;
+        font-size: 12px;
+        padding: 10px 5px;
     }
 
     .main .sec6 .carousel-indicators li:last-child {
         margin-right: 0;
     }
-
+    .carousel-indicators li{
+        padding: 10px 5px;
+    }
     .main .sec6 .carousel-control {
         display: none;
     }
