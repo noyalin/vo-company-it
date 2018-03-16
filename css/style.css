@@ -56,34 +56,11 @@ body {
     padding: 0;
 }
 
+
 a, a:hover {
     cursor: pointer;
     text-decoration: none;
 }
-
-/*.navbar-toggle .icon-bar.close:first-child{*/
-
-/*position:relative;*/
-
-/*width:0.3em;*/
-
-/*height:1.5em;*/
-
-/*background: #333;*/
-
-/*-webkit-transform: rotate(45deg);*/
-
-/*-moz-transform: rotate(45deg);*/
-
-/*-o-transform: rotate(45deg);*/
-
-/*-ms-transform: rotate(45deg);*/
-
-/*transform: rotate(45deg);*/
-
-/*display: inline-block;*/
-
-/*}*/
 
 .close:after {
 
@@ -127,10 +104,6 @@ a, a:hover {
 
 .font-sb {
     font-family: SourceHanSansCN-Bold;
-}
-
-#wrapper {
-    position: relative;
 }
 
 #header {
@@ -428,14 +401,6 @@ a, a:hover {
     border: 0;
 }
 
-.main .sec6 .carousel-indicators li:hover {
-    color: #fff;
-    cursor: pointer;
-    background-color: #F85E63;
-    border: 0;
-
-}
-
 .main .sec6 .b-shadow {
     -webkit-box-shadow: 0 2px 48px #cccccc;
     -moz-box-shadow: 0 2px 48px #cccccc;
@@ -531,6 +496,7 @@ a, a:hover {
 /*行业案例 轮播*/
 .main .container.sec6 {
     padding: 0;
+    overflow: hidden;
 }
 
 .carousel-tab {
@@ -1169,6 +1135,10 @@ a, a:hover {
 
     .main .section .pic {
         margin-left: 0;
+        margin-top: 30px;
+    }
+    .main .section .content {
+        padding: 5px 0;
     }
 
     .main .sec6 .brand {
@@ -1251,7 +1221,18 @@ a, a:hover {
         margin-bottom: 20px;
     }
 
-    /*关于我们*/
+    /*二级页*/
+    .other-page .other-head{
+        min-height: 150px;
+        max-height: 200px;
+    }
+    .other-page .other-head .head-title .title-en{
+        font-size: 30px;
+        padding-top: 10px;
+    }
+    .other-page .other-head .head-title .title-ch{
+        font-size: 24px;
+    }
     .other-page .about-main {
         padding: 30px;
     }

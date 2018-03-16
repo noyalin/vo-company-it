@@ -22,17 +22,21 @@
     <![endif]-->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src = "js/skrollr.min.js" ></script>
+    <!--<!--[if lt IE 9]>-->
+    <script src="js/skrollr.ie.min.js"></script>
+    <!--<![endif]-->
     <script src="js/angular.min.js"></script>
     <script src="js/angular-ui-router.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/app.js"></script>
 
 </head>
 <body>
-<div id="wrapper" ng-app="myApp">
+<div ng-app="myApp">
     <header id="header" role="header" ng-include="'common/head.html'">
     </header>
-    <div class="main">
+    <div class="main" id="skrollr-body">
         <!--banner-->
         <div id="promo" class="banner scroll-content">
             <img src="images/banner.png" alt="banner"/>
@@ -55,7 +59,7 @@
                         <div class="index">01</div>
                         <div class="detail">
                             <div class="title" data-anchor-target="#promo2"  data-55p-center="opacity:0;margin-left:40px" data-30p-center="opacity:1;margin-left:0px">新零售解决方案</div>
-                            <div class="line"></div>
+                            <div class="line change1"></div>
                             <p class="content" data-anchor-target="#promo2"  data-55p-center="opacity:0;margin-left:-200px" data-30p-center="opacity:1;margin-left:0px">
                                 开放平台<br>
                                 赋能供应商<br>
@@ -68,7 +72,7 @@
                             <div class="more"  data-anchor-target="#promo2" data-10p-center="opacity:1;bottom:0px;" data-60p-center="opacity:0;bottom:-100px;"><a href="solution.html#sale">了解更多</a></div>
                         </div>
                     </div>
-                    <div class="section-right col-sm-12 hidden-xs">
+                    <div class="section-right col-sm-12 change2">
                         <div class="pic" data-anchor-target="#promo2" data-45p-center="opacity:0;left:100px" data-30p-center="opacity:1;left:0px"><img src="images/新零售.png"/></div>
                     </div>
                 </div>
@@ -79,14 +83,14 @@
              style="background: url(images/structure.png) no-repeat;background-size:contain;background-position: 14%,0%;">
             <div class="container section-content">
                 <div class="row">
-                    <div class="section-right col-sm-12 hidden-xs">
+                    <div class="section-right col-sm-12 change2">
                         <div class="pic"  data-anchor-target="#promo3" data-45p-center="opacity:0;left:100px" data-30p-center="opacity:1;left:0px"><img src="images/system.png"/></div>
                     </div>
                     <div class="section-left col-sm-12">
                         <div class="index">01</div>
                         <div class="detail">
                             <div class="title"  data-anchor-target="#promo3"  data-55p-center="opacity:0;margin-left:40px" data-30p-center="opacity:1;margin-left:0px">跨境电商解决方案</div>
-                            <div class="line"></div>
+                            <div  class="line change1"></div>
                             <p class="content"  data-anchor-target="#promo3"  data-55p-center="opacity:0;margin-left:-200px" data-30p-center="opacity:1;margin-left:0px">
                                 开放平台<br>
                                 产品数字化管理服务<br>
@@ -110,8 +114,8 @@
                     <div class="section-left col-sm-12">
                         <div class="index">01</div>
                         <div class="detail">
-                            <div class="title"   data-anchor-target="#promo4"  data-55p-center="opacity:0;margin-left:40px" data-30p-center="opacity:1;margin-left:0px">APP解决方案</div>
-                            <div class="line"></div>
+                            <div class="title"  data-anchor-target="#promo4"  data-55p-center="opacity:0;margin-left:40px" data-30p-center="opacity:1;margin-left:0px">APP解决方案</div>
+                            <div class="line change1"></div>
                             <p class="content"   data-anchor-target="#promo4"  data-55p-center="opacity:0;margin-left:-200px" data-30p-center="opacity:1;margin-left:0px">
                                 IOS设计开发<br>
                                 Android设计开发<br>
@@ -121,7 +125,7 @@
                             <div class="more"  data-anchor-target="#promo4" data-10p-center="opacity:1;bottom:0px;" data-60p-center="opacity:0;bottom:-100px;"><a  href="solution.html#app">了解更多</a></div>
                         </div>
                     </div>
-                    <div class="section-right col-sm-12 hidden-xs">
+                    <div class="section-right col-sm-12 change2">
                         <div class="pic"  data-anchor-target="#promo4" data-45p-center="opacity:0;left:100px" data-30p-center="opacity:1;left:0px"><img src="images/app.png"/></div>
                     </div>
 
@@ -133,14 +137,14 @@
               style="background: url(images/wxbg.png) no-repeat;background-size:contain;background-position: 22%,0%;">
             <div class="container section-content">
                 <div class="row">
-                    <div class="section-right col-sm-12 hidden-xs">
+                    <div class="section-right col-sm-12 change2">
                         <div class="pic"  data-anchor-target="#promo5" data-45p-center="opacity:0;left:-100px" data-30p-center="opacity:1;left:0px"><img src="images/wx.png"/></div>
                     </div>
                     <div class="section-left col-sm-12 ">
                         <div class="index">04</div>
                         <div class="detail">
                             <div class="title"   data-anchor-target="#promo5"  data-55p-center="opacity:0;margin-left:40px" data-30p-center="opacity:1;margin-left:0px">微信小程序生态圈<br>解决方案</div>
-                            <div class="line"></div>
+                            <div class="line change1"></div>
                             <p class="content"   data-anchor-target="#promo5"  data-55p-center="opacity:0;margin-left:-200px" data-30p-center="opacity:1;margin-left:0px">
                                 微商城小程序设计开发<br>
                                 分销小程序设计开发<br>
@@ -312,7 +316,7 @@
                                             <div class="brand-container b-shadow col-md-10 col-md-offset-1">
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                        <img src="images/xinlingshou.png" alt="huashang"/>
+                                                        <img src="images/xinlingshou.png" alt="huashang" style="padding: 0 15px;"/>
                                                         <div class="title1">
                                                             华商后台系统
                                                         </div>
@@ -412,38 +416,131 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!--滚动nav-->
-    <nav class="scroll-nav">
-        <div class="nav-bg"></div>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
 
-    </nav>
-    <!--尾部-->
-    <footer ng-include="'common/foot.html'"></footer>
+        <!--滚动nav-->
+        <nav class="scroll-nav">
+            <div class="nav-bg"></div>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+        </nav>
+        <!--尾部-->
+        <footer>
+            <div class="container-fluid foot">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6  col-xs-6">
+                                            <section class="">
+                                                <p class="foot-title">产品中心</p>
+                                                <p>VMS</p>
+                                                <p>CMS</p>
+                                                <p>OMS</p>
+                                                <p>WMS</p>
+                                                <p>Liking</p>
+                                                <p>APP</p>
+                                            </section>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6  col-xs-6">
+                                            <section>
+                                                <p class="foot-title">解决方案</p>
+                                                <p>跨境电商解决方案</p>
+                                                <p>跨境物流解决方案</p>
+                                                <p>系统集成解决方案</p>
+                                                <p>新零售解决方案</p>
+                                                <p>全渠道解决方案</p>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6  col-xs-12">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                            <section>
+                                                <p class="foot-title">行业案例</p>
+                                                <p>跨境电商</p>
+                                                <p>系统集成</p>
+                                                <p>后台数据</p>
+                                                <p>O2O</p>
+                                                <p>软件开发</p>
+                                            </section>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6  col-xs-6">
+
+                                            <section>
+                                                <p class="foot-title">关于我们</p>
+                                                <p>公司介绍</p>
+                                                <p>联系我们</p>
+                                            </section>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 foot-right">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-4">
+                                    <div class="logo"><img src="images/vo_logo.svg" alt="logo"/></div>
+                                </div>
+                                <div class="col-md-12 col-sm-4">
+                                    <div class="address">
+                                        <div>
+                                            <span class="glyphicon glyphicon-map-marker icon"></span>
+                                        </div>
+                                        <div>
+                                            <div class="address-cn detail">上海浦东软件园郭守敬路498号20号楼</div>
+                                            <div class="detail">Pudong Software Park 498 Guoshoujing Road,Bldg.20 Shanghai,China</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-sm-4">
+                                    <div class="email">
+                                        <div class="glyphicon glyphicon-envelope icon"></div><div class="detail">Email: info@voyageone.com</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="copy-right">
+                                Copyright © 2017 VoyageOne Group Inc. All Rights Reserved.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
 </div>
 
-
-<!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.js"></script>
-<script src="js/angular.min.js"></script>
-<script src="js/angular-ui-router.js"></script>
 <script src="js/main.js"></script>
-<!--<script src = "js/skrollr.min.js" ></script>-->
-<!--&lt;!&ndash;[if lt IE 9]>-->
-<!--<script src="js/skrollr.ie.min.js"></script>-->
-<!--<![endif]&ndash;&gt;-->
-<script type="text/javascript">
-    jQuery(document).ready(function () {
-        //动画
-        // var s = skrollr.init();
 
+<script type="text/javascript">
+    window.onload=function (ev) {
+        //动画
+        skrollr.init({
+            // forceHeight: false,
+            // smoothScrollingDuration: 800
+        });
+
+    };
+    jQuery(document).ready(function () {
         //nav 滚动
         var $navs = $('nav ul li'),// 导航
             $sections = $('.scroll-content'), // 内容
@@ -451,16 +548,18 @@
             navLength = $navs.length - 1;
 
         scrollFunc();
-        $window.on('scroll', scrollFunc);
+        $(window).on('scroll touchmove', scrollFunc);
 
         function scrollFunc() {
+
             var scrollTop = $window.scrollTop(),
                 len = navLength;
-
+            //alert('2')
             for (; len > -1; len--) {
                 var that = $sections.eq(len);
                 if (scrollTop >= that.offset().top) {
                     //console.log(scrollTop + "--" + that.offset().top);
+                    //alert(scrollTop)
                     $navs.removeClass('current').eq(len).addClass('current');
                     break;
                 }
@@ -469,7 +568,6 @@
 
 
     });
-
 
 </script>
 </body>
