@@ -7,10 +7,9 @@
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <link rel="short cut icon" href="images/favicon_0.ico" type="image/vnd.microsoft.icon">
     <title>VoyageOne</title>
-
+    <link rel="stylesheet" href="css/lightbox.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css">
-
     <link rel="stylesheet" href="css/style.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -27,6 +26,7 @@
     <script src="js/angular-ui-router.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/app.js"></script>
+
 
 </head>
 <body>
@@ -58,10 +58,7 @@
         </div>
 
     </div>
-    <!--遮罩-->
-    <div id="big_img_bg"></div>
-    <!--查看原图-->
-    <div id="big_img"></div>
+
     <!--尾部-->
     <footer>
         <div ng-include="'common/foot.html'"></div>
@@ -70,6 +67,7 @@
 
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/lightbox-plus-jquery.js"></script>
 <script src="js/main.js"></script>
 <script type="text/javascript">
     $(function () {

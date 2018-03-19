@@ -827,7 +827,7 @@ a, a:hover {
 .other-page .container .content .content-pic{
 
 }
-.other-page .container .content .img_click img{
+.other-page .container .content .content-pic img{
     width: 100%;
     height: auto;
 }
@@ -835,37 +835,6 @@ a, a:hover {
 .other-page .container .pic img {
     max-width: 300px;
     height: auto;
-}
-/*查看原图*/
-.small_img {
-    cursor: pointer;
-}
-
-#big_img_bg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: #000;
-    opacity: 0.7;
-    display: none;
-}
-
-#big_img {
-    z-index: 9999;
-    max-width: 1170px;
-    overflow: scroll;
-    display: none;
-    position: absolute;
-    margin: 20px auto;
-    min-height: 150px;
-    padding: 15px;
-    background: #fff;
-    border: 5px solid #000;
-    height: 100%;
-}
-
-#big_img img {
-    text-align: center;
 }
 
 .zoom-in {
