@@ -810,15 +810,71 @@ a, a:hover {
     color: #807876;
 }
 
-.other-page .container .content div {
-    padding: 2px 0;
+.other-page .container .content>ul {
+    padding-left: 15px;
+}
+
+.other-page .container .content>ul li{
+    margin-bottom: 5px;
+}
+
+.other-page .container .content>ul>li{
+    list-style: circle;
+}
+.other-page .container .content>ul>li>ul>li{
+    list-style: disc;
+}
+.other-page .container .content .content-pic{
+
+}
+.other-page .container .content .img_click img{
+    width: 100%;
+    height: auto;
 }
 
 .other-page .container .pic img {
     max-width: 300px;
     height: auto;
 }
+/*查看原图*/
+.small_img {
+    cursor: pointer;
+}
 
+#big_img_bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000;
+    opacity: 0.7;
+    display: none;
+}
+
+#big_img {
+    z-index: 9999;
+    max-width: 1170px;
+    overflow: scroll;
+    display: none;
+    position: absolute;
+    margin: 20px auto;
+    min-height: 150px;
+    padding: 15px;
+    background: #fff;
+    border: 5px solid #000;
+    height: 100%;
+}
+
+#big_img img {
+    text-align: center;
+}
+
+.zoom-in {
+    cursor: zoom-in; /* 大大大 */
+}
+
+.zoom-out {
+    cursor: zoom-out; /* 小小小 */
+}
 /*侧边栏*/
 .page-nav {
     padding: 0 5px;
@@ -1102,9 +1158,9 @@ a, a:hover {
         padding: 0;
     }
 
-    .main .content {
-        width: 51%;
-    }
+    /*.main .content {*/
+        /*width: 51%;*/
+    /*}*/
 }
 
 @media (max-width: 768px) {
