@@ -81,6 +81,10 @@
                 $("ul.navbar-nav li:eq(1)").addClass("active").siblings().removeClass("active");
             }
         }
+
+        $('.container').on('click','.content-pic',function () {
+            $('.lb-image').get(0).style.width='1900px'
+        })
     });
 
 </script>

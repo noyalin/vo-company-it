@@ -26,9 +26,12 @@
     <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
 
     <script src="js/angular.min.js"></script>
+    <script src="js/angular-ui-router.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/app.js"></script>
 </head>
 <body>
-<div id="wrapper" ng-app="">
+<div id="wrapper" ng-app="myApp">
     <header id="header" role="header" ng-include="'common/head.html'">
     </header>
     <div class="other-page">
@@ -39,23 +42,18 @@
                 <div class="title-detail">Voyageone one。。。</div>
             </div>
         </div>
-        <div class="container">
-            <div class="container-fluid">
-                <div class="cate-wrap">
-                    <div class="cate">关于我们<span>></span>公司介绍</div>
+        <div class="container other-main">
+            <div class="row">
+                <div class="col-md-2 col-sm-3 page-nav">
+                    <ul class="left-nav">
+                        <li><a ui-sref="introduce">公司介绍</a></li>
+                        <li><a ui-sref="contact">联系我们</a></li>
+                    </ul>
                 </div>
-                <div class="about-main">
-                    <div class="about-pic"><img src="images/about.jpg"/></div>
-                    <div class="about-content">
-                        上海沃易智信息技术有限公司办公室地址位于中国大城市，魔都上海，中国（上海）自由贸易试验区郭守敬路498号9幢20204-20206、20205-20207、20209-20211室，于2015年04月09日在自贸区市场监督管理局注册成立，注册资本为20万美元，在公司发展壮大的3年里，我们始终为客户提供好的产品和技术支持、健全的售后服务，我公司主要经营计算机软件的开发、设计、制作，销售自产产品，并提供相关技术咨询和技术服务；以承接服务外包方式从事系统应用管理和维护、信息技术支持管理、数据处理及信息技术和业务流程外包服务；企业管理咨询、市场营销策划咨询、企业形象策划咨询（依法须经批准的项目，经相关部门批准后方可开展经营活动）。我们有好的产品和专业的销售和技术团队，我公司属于上海信息传输、计算机服务和软件业黄页行业，如果您对我公司的产品服务有兴趣，期待您在线留言或者来电咨询。
-                    </div>
-                    <div class="page-left">
-                        <div class="introduce"><a>公<br>司<br>介<br>绍</a></div>
-                        <div class="contact"><a>联<br>系<br>我<br>们</a></div>
-                    </div>
+                <div class="col-md-10 col-sm-9">
+                    <div ui-view></div>
                 </div>
             </div>
-
         </div>
 
     </div>
