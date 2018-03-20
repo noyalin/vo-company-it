@@ -56,7 +56,6 @@ body {
     padding: 0;
 }
 
-
 a, a:hover {
     cursor: pointer;
     text-decoration: none;
@@ -712,10 +711,10 @@ a, a:hover {
     background: #FFFFFF;
 }
 
-.other-page img {
-    max-width: 100%;
-    height: auto;
-}
+/*.other-page img {*/
+/*max-width: 100%;*/
+/*height: auto;*/
+/*}*/
 
 .other-page .cate-wrap {
     padding: 0;
@@ -729,11 +728,13 @@ a, a:hover {
 .other-page .cate span {
     margin: 0 20px;
 }
-.other-page .cat{
+
+.other-page .cat {
     margin-top: 30px;
     padding-left: 15px;
     color: #938d8b;
 }
+
 .other-page .about-main {
     padding: 50px;
     background: #fff;
@@ -810,26 +811,38 @@ a, a:hover {
     color: #807876;
 }
 
-.other-page .container .content>ul {
+.other-page .container .content > ul {
     padding-left: 15px;
 }
 
-.other-page .container .content>ul li{
+.other-page .container .content > ul li {
     margin-bottom: 5px;
 }
 
-.other-page .container .content>ul>li{
+.other-page .container .content > ul > li {
     list-style: circle;
 }
-.other-page .container .content>ul>li>ul>li{
+
+.other-page .container .content > ul > li > ul > li {
     list-style: disc;
 }
-.other-page .container .content .content-pic{
 
+.other-page .container .content-pic {
+    margin: 30px 0;
 }
-.other-page .container .content .content-pic img{
+
+.other-page .container .content-pic img {
     width: 100%;
     height: auto;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    -moz-box-shadow: 2px 2px 7px #CCCCCC;
+    -webkit-box-shadow: 2px 2px 7px #CCCCCC;
+    box-shadow: 2px 2px 7px #CCCCCC;
+}
+
+.other-page .container .content-pic.origin img {
+    max-width: 750px;
 }
 
 .other-page .container .pic img {
@@ -844,6 +857,7 @@ a, a:hover {
 .zoom-out {
     cursor: zoom-out; /* 小小小 */
 }
+
 /*侧边栏*/
 .page-nav {
     padding: 0 5px;
@@ -1128,7 +1142,7 @@ a, a:hover {
     }
 
     /*.main .content {*/
-        /*width: 51%;*/
+    /*width: 51%;*/
     /*}*/
 }
 
@@ -1147,9 +1161,11 @@ a, a:hover {
         width: 100%;
         top: 60%;
     }
-    .main .banner .banner-title2{
+
+    .main .banner .banner-title2 {
         margin-top: 10px;
     }
+
     .main .content {
         width: 100%;
     }
@@ -1162,6 +1178,7 @@ a, a:hover {
         margin-left: 0;
         margin-top: 30px;
     }
+
     .main .section .content {
         padding: 5px 0;
     }
@@ -1192,9 +1209,11 @@ a, a:hover {
     .main .sec6 .carousel-indicators li:last-child {
         margin-right: 0;
     }
-    .carousel-indicators li{
+
+    .carousel-indicators li {
         padding: 10px 5px;
     }
+
     .main .sec6 .carousel-control {
         display: none;
     }
@@ -1247,17 +1266,20 @@ a, a:hover {
     }
 
     /*二级页*/
-    .other-page .other-head{
+    .other-page .other-head {
         min-height: 150px;
         max-height: 200px;
     }
-    .other-page .other-head .head-title .title-en{
+
+    .other-page .other-head .head-title .title-en {
         font-size: 30px;
         padding-top: 10px;
     }
-    .other-page .other-head .head-title .title-ch{
+
+    .other-page .other-head .head-title .title-ch {
         font-size: 24px;
     }
+
     .other-page .about-main {
         padding: 30px;
     }

@@ -8,6 +8,7 @@
     <link rel="short cut icon" href="images/favicon_0.ico" type="image/vnd.microsoft.icon">
     <title>VoyageOne</title>
 
+    <link rel="stylesheet" href="css/lightbox.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css">
 
@@ -60,25 +61,23 @@
     </div>
 </div>
 
+<script src="js/bootstrap.js"></script>
+<script src="js/lightbox-plus-jquery.js"></script>
 
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.js"></script>
+<script type="text/javascript">
+    $(function () {
+        //head当前页样式
+        setTimeout(addClassActive(), 100);
 
-
-    <script type="text/javascript">
-        $(function () {
-            //head当前页样式
-            setTimeout(addClassActive(), 100);
-
-            function addClassActive() {
-                if (!$("ul.navbar-nav li").get(0)) {
-                    setTimeout(arguments.callee, 100);
-                } else {
-                    $("ul.navbar-nav li:eq(2)").addClass("active").siblings().removeClass("active");
-                }
+        function addClassActive() {
+            if (!$("ul.navbar-nav li").get(0)) {
+                setTimeout(arguments.callee, 100);
+            } else {
+                $("ul.navbar-nav li:eq(2)").addClass("active").siblings().removeClass("active");
             }
-        });
+        }
+    });
 
-    </script>
+</script>
 </body>
 </html>
