@@ -8,11 +8,10 @@
     <link rel="short cut icon" href="images/favicon_0.ico" type="image/vnd.microsoft.icon">
     <title>VoyageOne</title>
 
-    <link rel="stylesheet" href="css/lightbox.css">
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,20 +21,21 @@
     <![endif]-->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-3.2.1.js"></script>
-    <script src="js/angular.min.js"></script>
-    <script src="js/angular-ui-router.js"></script>
-    <script src="js/app.js"></script>
+    <script src="../js/jquery-3.2.1.js"></script>
+
+    <script src="../js/angular.min.js"></script>
+    <script src="../js/angular-ui-router.js"></script>
+    <script src="../js/app.js"></script>
 </head>
 <body>
 <div id="wrapper" ng-app="myApp">
-    <header id="header" role="header" ng-include="'common/head.html'">
+    <header id="header" role="header" ng-include="'../common/head.html'">
     </header>
-    <div class="other-page product">
+    <div class="other-page case">
         <div class="other-head">
             <div class="head-title container">
                 <div class="title-en">PRODUCT CENTER</div>
-                <div class="title-ch">产品中心</div>
+                <div class="title-ch">行业案例</div>
                 <div class="title-detail">Voyageone one。。。</div>
             </div>
         </div>
@@ -43,10 +43,10 @@
             <div class="row">
                 <div class="col-md-2 col-sm-3 page-nav">
                     <ul class="left-nav">
-                        <li><a ui-sref="cms">cms</a></li>
-                        <li><a ui-sref="vms">vms</a></li>
-                        <li><a ui-sref="oms">oms</a></li>
-                        <li><a ui-sref="wms">wms</a></li>
+                        <li><a ui-sref="case_ec">跨境电商</a></li>
+                        <li><a ui-sref="case_sale">新零售</a></li>
+                        <li><a ui-sref="case_app">app</a></li>
+                        <li><a ui-sref="case_wechat">微信小程序</a></li>
                     </ul>
                 </div>
                 <div class="col-md-10 col-sm-9">
@@ -54,26 +54,27 @@
                 </div>
             </div>
         </div>
-        <!--尾部-->
-        <footer>
-            <div ng-include="'common/foot.html'"></div>
-        </footer>
+
     </div>
+    <!--尾部-->
+    <footer>
+        <div ng-include="'../common/foot.html'"></div>
+    </footer>
 </div>
 
-<script src="js/bootstrap.js"></script>
-<script src="js/lightbox-plus-jquery.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../js/bootstrap.js"></script>
 
 <script type="text/javascript">
     $(function () {
         //head当前页样式
-        setTimeout(addClassActive(), 100);
-
+        setTimeout(addClassActive(),100);
         function addClassActive() {
-            if (!$("ul.navbar-nav li").get(0)) {
-                setTimeout(arguments.callee, 100);
-            } else {
-                $("ul.navbar-nav li:eq(2)").addClass("active").siblings().removeClass("active");
+            if(!$("ul.navbar-nav li").get(0)){
+                setTimeout(arguments.callee,100);
+            }else{
+                $("ul.navbar-nav li:eq(3)").addClass("active").siblings().removeClass("active");
             }
         }
     });
