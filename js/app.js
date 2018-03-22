@@ -50,11 +50,11 @@ app.config(["$stateProvider", "$locationProvider", function ($stateProvider) {
             url: '/case/wechat',
             templateUrl:'case_wechat.html'
         })
-        .state("introduce", {//行业案例-微信
+        .state("introduce", {//关于我们-介绍
             url: '/about/introduce',
             templateUrl:'introduce.html'
         })
-        .state("contact", {//行业案例-微信
+        .state("contact", {//关于我们-联系方式
             url: '/about/contact',
             templateUrl:'contact.html'
         })

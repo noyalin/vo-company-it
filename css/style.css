@@ -61,33 +61,6 @@ a, a:hover {
     text-decoration: none;
 }
 
-.close:after {
-
-    content: "";
-
-    position: absolute;
-
-    top: 0;
-
-    left: 0;
-
-    width: 0.3em;
-
-    height: 1.5em;
-
-    background: #333;
-
-    -webkit-transform: rotate(270deg);
-
-    -moz-transform: rotate(270deg);
-
-    -o-transform: rotate(270deg);
-
-    -ms-transform: rotate(270deg);
-
-    transform: rotate(270deg);
-
-}
 
 .text-l {
     text-align: left;
@@ -101,6 +74,9 @@ a, a:hover {
     text-align: center;
 }
 
+img.img100p{
+    width: 100%;
+}
 .font-sb {
     font-family: SourceHanSansCN-Bold;
 }
@@ -966,7 +942,7 @@ a, a:hover {
 }
 
 @media (max-width: 1200px) {
-    .content {
+    .section-content .content {
         width: 80%;
     }
 }
@@ -1128,6 +1104,10 @@ a, a:hover {
     .foot .foot-right {
         margin-top: 30px;
     }
+
+    .foot .foot-m{
+        margin-bottom: 20px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -1216,7 +1196,7 @@ a, a:hover {
 
     .main .sec6 .carousel-indicators li {
         margin-right: 2px;
-        width: 90px;
+        width: 84px;
         font-size: 12px;
         padding: 10px 5px;
     }
