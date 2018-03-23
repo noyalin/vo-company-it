@@ -572,6 +572,9 @@ img.img100p{
 .glyphicon-chevron-left img, .glyphicon-chevron-right img {
     width: 30px;
     height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /*新零售*/
