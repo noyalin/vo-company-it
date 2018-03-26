@@ -585,7 +585,7 @@ img.img100p{
 }
 
 .main .sec6 .xls .title1 {
-    margin-top: 20px;
+    margin-bottom: 20px;
     font-family: SourceHanSansCN-Normal;
     font-size: 36px;
     color: #4E4949;
@@ -1070,6 +1070,12 @@ img.img100p{
         height: 705px;
     }
 
+    .carousel-control {
+        left:20px;
+    }
+    .carousel-control.right{
+        right:20px;
+    }
     .main .sec6 .carousel-indicators li {
         margin-right: 10px;
         width: 120px;
