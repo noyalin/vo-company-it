@@ -54,6 +54,18 @@ app.config(["$stateProvider", "$locationProvider", function ($stateProvider) {
             url: '/about/introduce',
             templateUrl:'introduce.html'
         })
+        .state("honor", {//关于我们-公司荣誉
+            url: '/about/honor',
+            templateUrl:'honor.html'
+        })
+        .state("team", {//关于我们-团队
+            url: '/about/team',
+            templateUrl:'team.html'
+        })
+        .state("join", {//关于我们-加入我们
+            url: '/about/join',
+            templateUrl:'join.html'
+        })
         .state("contact", {//关于我们-联系方式
             url: '/about/contact',
             templateUrl:'contact.html'

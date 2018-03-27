@@ -81,6 +81,11 @@ img.img100p{
     font-family: SourceHanSansCN-Bold;
 }
 
+.pad-left-right-15{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
 #header {
     position: fixed;
     top: 0;
@@ -602,7 +607,7 @@ img.img100p{
 /*app*/
 .main .sec6 .app img {
     float: left;
-    max-width: 375px;
+    max-width: 300px;
     /*width: 100%;*/
     height: auto;
     position: relative;
@@ -614,7 +619,7 @@ img.img100p{
 
 .main .sec6 .app .app2 {
     z-index: 2;
-    margin-left: -21%;
+    margin-left: -34%;
     margin-top: 5%;
 }
 
@@ -694,11 +699,6 @@ img.img100p{
     margin-bottom: 30px;
     background: #FFFFFF;
 }
-
-/*.other-page img {*/
-/*max-width: 100%;*/
-/*height: auto;*/
-/*}*/
 
 .other-page .cate-wrap {
     padding: 0;
@@ -943,6 +943,11 @@ img.img100p{
     text-align: center;
     margin-top: 40px;
 }
+.foot .ba a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #808080;
+}
 
 @media (max-width: 1200px) {
     .section-content .content {
@@ -998,16 +1003,16 @@ img.img100p{
     }
 
     .main .sec6 .app img {
-        max-width: 300px;
+        max-width: 270px;
     }
 
     .main .sec6 .app .app2 {
-        margin-left: -21%;
+        margin-left: -46%;
         margin-top: 5%;
     }
 
     .main .sec6 .carousel {
-        height: 756px;
+        height: 740px;
     }
 
     .main .sec6 .xls .title1 {
@@ -1054,18 +1059,6 @@ img.img100p{
         margin-top: 30px;
     }
 
-    /*.main .sec6 .brand-container .row .brand-wrap:nth-child(2n) {*/
-    /*border-right: 0;*/
-    /*}*/
-    /*.main .sec6 .brand-container .row .brand-wrap {*/
-    /*border-bottom: 1px solid #E5E5E5;*/
-    /*}*/
-    /*.main .sec6 .brand-container .row:last-child .brand-wrap:nth-child(3) {*/
-    /*border-bottom: 0;*/
-    /*}*/
-    /*.main .sec6 .brand-container .row:last-child .brand-wrap:nth-child(4) {*/
-    /*border-bottom: 0;*/
-    /*}*/
     .carousel {
         height: 705px;
     }
@@ -1095,13 +1088,12 @@ img.img100p{
         margin-right: 0px;
         right: 0;
     }
-
     .main .sec6 .app img {
-        max-width: 300px;
+        max-width: 240px;
     }
 
     .main .sec6 .app .app2 {
-        margin-left: -21%;
+        margin-left: -42%;
         margin-top: 5%;
     }
 
@@ -1205,7 +1197,7 @@ img.img100p{
 
     .main .sec6 .carousel-indicators li {
         margin-right: 2px;
-        width: 84px;
+        width: 80px;
         font-size: 12px;
         padding: 10px 5px;
     }
@@ -1326,5 +1318,9 @@ img.img100p{
     .foot .copy-right {
         text-align: left;
     }
+    .foot .ba{
+        text-align: left;
+    }
+
 
 }
