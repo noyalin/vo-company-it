@@ -44,7 +44,7 @@
 
 html, body {
     position: relative;
-    height: 100%;
+
 }
 
 body {
@@ -85,7 +85,9 @@ img.img100p{
     padding-right: 15px;
     padding-left: 15px;
 }
-
+#skrollr-body{
+    height: 100%;
+}
 #header {
     position: fixed;
     top: 0;
@@ -156,7 +158,7 @@ img.img100p{
 
 .main .banner .banner-title1 {
     position: absolute;
-    width: 645px;
+    width: 100%;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -982,6 +984,10 @@ img.img100p{
 }
 
 @media (max-width: 1200px) and (min-width: 992px) {
+    .main .banner .banner-title1 {
+        font-size: 48px;
+    }
+
     .main .section {
         height: 670px;
     }
@@ -1040,7 +1046,7 @@ img.img100p{
 
 @media (max-width: 992px) {
     .main .banner .banner-title1 {
-        font-size: 48px;
+        font-size: 36px;
     }
 
     .main .section {

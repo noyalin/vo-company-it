@@ -42,9 +42,9 @@
             <img src="images/banner.png" alt="banner"/>
             <div>
                 <div class="banner-title1">
-                    <span class="animated flash">DISCOVER THE<br>EASIEST WAY<br>TO SELL IN CHINA</span>
+                    <span class="animated flash">新零售系统及跨境产业解决方案提供商</span>
                     <div class="banner-title2  animated bounce">
-                        VoyageOne unlocks a new world of online shoppers to brands and retailers, and a market of possibilites.
+                        Retail Without Bounds
                     </div>
                 </div>
             </div>
@@ -405,9 +405,9 @@
                                 <div class="logo"><a href="/index.html"><img src="/images/vo_logo.svg" alt="logo"/></a></div>
                             </div>
                             <div class="col-md-12 col-sm-4">
-                                <div class="address">
-                                    <div>
-                                        <span class="glyphicon glyphicon-map-marker icon"></span>
+                                <div class="address" >
+                                    <div class=" glyphicon glyphicon-map-marker icon" style="left: -5px;">
+                                        <!--<span class="glyphicon glyphicon-map-marker icon"></span>-->
                                     </div>
                                     <div>
                                         <div class="address-cn detail">上海浦东软件园郭守敬路498号20号楼</div>
@@ -417,7 +417,7 @@
                             </div>
                             <div class="col-md-12 col-sm-4">
                                 <div class="email">
-                                    <div class="glyphicon glyphicon-envelope icon"></div><div class="detail">Email: info@voyageone.com</div>
+                                    <div class="glyphicon glyphicon-envelope icon"></div><div class="detail">Email: hr@voyageone.cn</div>
                                 </div>
                             </div>
                         </div>
@@ -426,7 +426,7 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="copy-right">
-                            Copyright © 2017 VoyageOne Group Inc. All Rights Reserved.
+                            Copyright © 2018-2019 VoyageOne Group Inc. All Rights Reserved.
                         </div>
                     </div>
                     <div class="col-xs-12">
@@ -438,27 +438,29 @@
                 </div>
             </div>
         </div>
+        <!--滚动nav-->
+        <nav class="scroll-nav">
+            <div class="nav-bg"></div>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav>
     </div>
-    <!--滚动nav-->
-    <nav class="scroll-nav">
-        <div class="nav-bg"></div>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
 
-    </nav>
 
 </div>
 
 <script src="js/bootstrap.js"></script>
 <script src="js/main.js"></script>
 
+
 <script type="text/javascript">
     jQuery(document).ready(function () {
+
         //nav 滚动
         var $navs = $('nav ul li'),// 导航
             $sections = $('.scroll-content'), // 内容
@@ -486,9 +488,14 @@
         //动画
         skrollr.init({
             forceHeight: false,
-            smoothScrollingDuration: 800
+            smoothScrolling:true,
+            smoothScrollingDuration:500,
+            easing: {
+                vibrate: function(p) {
+                    return Math.sin(p * 10 * Math.PI);
+                }
+            }
         });
-
 
     });
 
