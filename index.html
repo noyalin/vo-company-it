@@ -10,7 +10,6 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/animate.min.css">
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -23,26 +22,27 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-ui-router.js"></script>
+    <script src="js/app.js"></script>
     <script src="js/skrollr.min.js"></script>
     <!--<!--[if lt IE 9]>-->
     <script src="js/skrollr.ie.min.js"></script>
     <!--<![endif]-->
-    <script src="js/angular.min.js"></script>
-    <script src="js/angular-ui-router.js"></script>
-    <script src="js/app.js"></script>
+
 
 </head>
 <body>
 <div ng-app="myApp">
     <header id="header" role="header" ng-include="'common/head.html'">
     </header>
-    <div class="main" id="skrollr-body">
+    <div class="main"  id="skrollr-body" data-bottom="">
         <!--banner-->
         <div id="promo" class="banner scroll-content">
             <img src="images/banner.png" alt="banner"/>
             <div>
                 <div class="banner-title1">
-                    <span class="animated flash">新零售系统及跨境产业解决方案提供商</span>
+                    <span>新零售系统及跨境产业解决方案提供商</span>
                     <div class="banner-title2  animated bounce">
                         Retail Without Bounds
                     </div>
@@ -79,7 +79,7 @@
                         <div class="pic"  data-anchor-target="#promo3" data-45p-center="opacity:0;left:100px" data-30p-center="opacity:1;left:0px"><img src="images/system.png"/></div>
                     </div>
                     <div class="section-left col-sm-12">
-                        <div class="index">01</div>
+                        <div class="index">02</div>
                         <div class="detail">
                             <div class="title"  data-anchor-target="#promo3"  data-55p-center="opacity:0;margin-left:40px" data-30p-center="opacity:1;margin-left:0px">跨境电商解决方案</div>
                             <div  class="line change1"></div>
@@ -98,7 +98,7 @@
             <div class="container section-content">
                 <div class="row">
                     <div class="section-left col-sm-12">
-                        <div class="index">01</div>
+                        <div class="index">03</div>
                         <div class="detail">
                             <div class="title"  data-anchor-target="#promo4"  data-55p-center="opacity:0;margin-left:40px" data-30p-center="opacity:1;margin-left:0px">APP解决方案</div>
                             <div class="line change1"></div>
@@ -344,10 +344,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div data-bottom="">
 
         <!--尾部-->
-        <div class="container-fluid foot">
+        <div class="container-fluid foot" data-bottom="">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -430,7 +430,7 @@
                         </div>
                     </div>
                     <div class="col-xs-12">
-                        <div class="text-c ba">
+                        <div class="text-c ba" data-30p-center="opacity:1;left:0px">
                             <a target="_blank" href="http://www.miitbeian.gov.cn/">沪ICP备15052274号-1</a><span id="cnzz_stat_icon_1259051890"><a href="http://www.cnzz.com/stat/website.php?web_id=1259051890" target="_blank" title="站长统计"><img border="0"  src="/images/cn.gif"></a></span></p>
                         </div>
                     </div>
@@ -438,20 +438,19 @@
                 </div>
             </div>
         </div>
-        <!--滚动nav-->
-        <nav class="scroll-nav">
-            <div class="nav-bg"></div>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </nav>
+
     </div>
-
-
+    <!--滚动nav-->
+    <nav class="scroll-nav" >
+        <div class="nav-bg"></div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </nav>
 </div>
 
 <script src="js/bootstrap.js"></script>
@@ -485,18 +484,14 @@
             }
         }
 
+        jQuery(window).ready(function () {
         //动画
-        skrollr.init({
-            forceHeight: false,
-            smoothScrolling:true,
-            smoothScrollingDuration:500,
-            easing: {
-                vibrate: function(p) {
-                    return Math.sin(p * 10 * Math.PI);
-                }
-            }
+            skrollr.init({
+                forceHeight: false,
+                smoothScrolling:true,
+                smoothScrollingDuration:800
+            });
         });
-
     });
 
 </script>
